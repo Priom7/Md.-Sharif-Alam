@@ -1,5 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import HomeIcon from "@material-ui/icons/Home";
+import InfoIcon from "@material-ui/icons/Info";
+import CodeIcon from "@material-ui/icons/Code";
+import AccountTreeIcon from "@material-ui/icons/AccountTree";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
@@ -46,19 +52,22 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
       display: "none",
-      background: "#0e153a",
+      background: "#1d1e22",
     },
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    background: "#0e153a",
+    background: "#1d1e22",
     zIndex: "5px",
-    border: "1px solid yellow",
+    border: "1px solid black",
   },
   content: {
     flexGrow: 1,
+    background: "#1D1E22",
+    opacity: ".9.8",
+    zIndex: "1",
   },
 }));
 
@@ -83,19 +92,34 @@ const Navigations = (props) => {
       <Divider />
       <List>
         <NavLink to='/home'>
-          <ListItem button>Home</ListItem>
+          <ListItem button>
+            <HomeIcon> </HomeIcon>
+            {"..."} Home
+          </ListItem>
         </NavLink>
         <NavLink to='/about'>
-          <ListItem button>About</ListItem>
+          <ListItem button>
+            <InfoIcon> </InfoIcon>
+            {"..."} About
+          </ListItem>
         </NavLink>
         <NavLink to='/skills'>
-          <ListItem button>Skills</ListItem>
+          <ListItem button>
+            <CodeIcon> </CodeIcon>
+            {"..."} Skills
+          </ListItem>
         </NavLink>
         <NavLink to='/projects'>
-          <ListItem button>Projects</ListItem>
+          <ListItem button>
+            <AccountTreeIcon> </AccountTreeIcon>
+            {"..."} Projects
+          </ListItem>
         </NavLink>
         <NavLink to='/contact'>
-          <ListItem button>Contact</ListItem>
+          <ListItem button>
+            <ContactMailIcon> </ContactMailIcon>
+            {"..."} Contact
+          </ListItem>
         </NavLink>
       </List>
       <Divider />
@@ -111,7 +135,7 @@ const Navigations = (props) => {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
-        style={{ background: "#0e153a" }}
+        style={{ background: "#1d1e22" }}
         position='fixed'
         className={classes.appBar}
       >
@@ -125,8 +149,15 @@ const Navigations = (props) => {
           >
             <MenuIcon />
           </IconButton>
+          <AccountCircleIcon
+            style={{
+              color: "#ee4540",
+
+              marginRight: "2px",
+            }}
+          ></AccountCircleIcon>
           <Typography
-            style={{ color: "#faee1c" }}
+            style={{ color: "#ee4540" }}
             variant='h6'
             noWrap
           >
