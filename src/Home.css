@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  align-items: center;
+  margin-top: 20vh;
+  padding: 10px;
+  background-color: rgba(192, 192, 192, 0.9);
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.home__name {
+  color: #0e153a;
+}
+
+.home__icons {
+  margin: 10px;
+}

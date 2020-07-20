@@ -1,0 +1,82 @@
+.about {
+  object-fit: contain;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.about__objective {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 15px;
+  border: 2px solid yellow;
+}
+
+.about__objective:hover {
+  background-color: #faee1c;
+}
+
+.about__education {
+  background-color: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #faee1c;
+}
+.about__education:hover {
+  background-color: #faee1c;
+}
+
+.about__experience {
+  background-color: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #faee1c;
+}
+.about__experience:hover {
+  background-color: #faee1c;
+}
+
+.about__training {
+  background-color: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #faee1c;
+}
+.about__training:hover {
+  background-color: #faee1c;
+}
+
+.about_volunteering {
+  background-color: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #faee1c;
+}
+.about_volunteering:hover {
+  background-color: #faee1c;
+}

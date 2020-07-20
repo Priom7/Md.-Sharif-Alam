@@ -1,0 +1,13 @@
+a {
+  color: #faee1c;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+}
