@@ -6,7 +6,7 @@ import BackGround from "./BackGround";
 
 const Home = (props) => {
   return (
-    <div>
+    <div className='home'>
       <div className='home__item'>
         <h1>
           Hi, I am{" "}

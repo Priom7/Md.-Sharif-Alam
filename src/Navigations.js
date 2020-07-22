@@ -14,7 +14,7 @@ import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-
+import user from "./images/user.png";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -35,6 +35,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    background: "#1d1e22",
   },
   drawer: {
     [theme.breakpoints.up("sm")]: {
@@ -60,8 +61,8 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     background: "#1d1e22",
-    zIndex: "5px",
-    border: "1px solid black",
+
+    boxShadow: "50px 18px 84px -10px rgba(0, 0, 0, 0.69)",
   },
   content: {
     flexGrow: 1,
@@ -88,6 +89,13 @@ const Navigations = (props) => {
         marginBottom: "auto",
       }}
     >
+      <div>
+        <img
+          className='nav_image'
+          src={user}
+          alt='user'
+        ></img>
+      </div>
       <div className={classes.toolbar} />
       <Divider />
       <List>

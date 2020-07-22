@@ -5,7 +5,11 @@
   flex-direction: column;
   justify-content: center;
 }
-
+.about__icons {
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
 .about_items {
   object-fit: contain;
   display: flex;
@@ -144,6 +148,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .about__educationItem1 {

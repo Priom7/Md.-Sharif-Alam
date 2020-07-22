@@ -2,6 +2,7 @@ import React from "react";
 import InfoIcon from "@material-ui/icons/Info";
 import CastForEducationIcon from "@material-ui/icons/CastForEducation";
 import CodeIcon from "@material-ui/icons/Code";
+import TimerIcon from "@material-ui/icons/Timer";
 import WorkIcon from "@material-ui/icons/Work";
 import AccessibilityNewIcon from "@material-ui/icons/AccessibilityNew";
 import Button from "@material-ui/core/Button";
@@ -32,13 +33,28 @@ const About = (props) => {
           <InfoIcon> </InfoIcon> About Me
         </h1>
         <p className='about__objectiveDetails'>
-          I do love my profession and am passionate about
-          it. As a person I am friendly, hardworking,
-          adaptive and self-motivated. Objective is to work
-          in such an environment where I can use my maximum
-          potential while working and enhance my
-          professional skills with learning and experience
-          for career growth.
+          I do love my profession and{" "}
+          <span style={{ color: "#ee4540" }}>
+            {" "}
+            passionate
+          </span>{" "}
+          about it. As a person I am friendly,{" "}
+          <span style={{ color: "#ee4540" }}>
+            hardworking
+          </span>
+          ,
+          <span style={{ color: "#ee4540" }}>
+            {" "}
+            adaptive
+          </span>{" "}
+          and{" "}
+          <span style={{ color: "#ee4540" }}>
+            self-motivated
+          </span>
+          . Objective is to work in such an environment
+          where I can use my maximum potential while working
+          and enhance my professional skills with learning
+          and experience for career growth.
         </p>
       </div>
       <div className='about__education'>
@@ -49,18 +65,31 @@ const About = (props) => {
         <div className='about__educationItem'>
           <div className='about__educationItem1'>
             <div className='about_educationPeriod'>
+              <TimerIcon className='about__icons'>
+                {" "}
+              </TimerIcon>{" "}
               09/2015 – 12/2019
             </div>
 
             <div className='about_educationDegree'>
               Bachelor of Science in Computer Science and
-              Engineering | BSCSE
+              Engineering |{" "}
+              <span style={{ color: "#ee4540" }}>
+                BSCSE
+              </span>
             </div>
             <div className='about_educationUVLocation'>
-              North South University, Bashundhara, Dhaka.
+              <span style={{ color: "#ee4540" }}>
+                North South University
+              </span>
+              , Bashundhara, Dhaka.
             </div>
             <div className='about_educationDegreeFocus'>
-              Focus: Software Engineering and Networking.
+              Focus:
+              <span style={{ color: "#ee4540" }}>
+                {" "}
+                Software Engineering and Networking.
+              </span>
             </div>
             <div className='about_educationDegreeMedium'>
               Medium of Instruction: English
@@ -68,38 +97,45 @@ const About = (props) => {
           </div>
           <div className='about__educationItem2'>
             <div className='about_educationPeriod'>
-              09/2015 – 12/2019
+              <TimerIcon className='about__icons'>
+                {" "}
+              </TimerIcon>{" "}
+              04/2013 – 05/2015
             </div>
             <div className='about_educationDegree'>
-              Bachelor of Science in Computer Science and
-              Engineering | BSCSE
+              Higher Secondary Certificate |
+              <span style={{ color: "#ee4540" }}> HSC</span>
             </div>
             <div className='about_educationUVLocation'>
-              North South University, Bashundhara, Dhaka.
+              Uttara High School and College, Uttara, Dhaka.
             </div>
             <div className='about_educationDegreeFocus'>
-              Focus: Software Engineering and Networking.
+              Focus: Science
             </div>
             <div className='about_educationDegreeMedium'>
-              Medium of Instruction: English
+              Medium of Instruction: Bengali
             </div>
           </div>
           <div className='about__educationItem3'>
             <div className='about_educationPeriod'>
-              09/2015 – 12/2019
+              <TimerIcon className='about__icons'>
+                {" "}
+              </TimerIcon>{" "}
+              01/2011 – 01/2013
             </div>
             <div className='about_educationDegree'>
-              Bachelor of Science in Computer Science and
-              Engineering | BSCSE
+              Secondary School Certificate |{" "}
+              <span style={{ color: "#ee4540" }}> SSC</span>
             </div>
             <div className='about_educationUVLocation'>
-              North South University, Bashundhara, Dhaka.
+              Tongi Pilot School and Girls College, Tongi,
+              Gazipur.
             </div>
             <div className='about_educationDegreeFocus'>
-              Focus: Software Engineering and Networking.
+              Focus: Science.
             </div>
             <div className='about_educationDegreeMedium'>
-              Medium of Instruction: English
+              Medium of Instruction: Bengali
             </div>
           </div>
         </div>
@@ -112,11 +148,18 @@ const About = (props) => {
           <div className='about__experienceItem'>
             <div className='about__experienceItem1'>
               <div className='about_experiencePeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
                 2/2019 – 6/2019
               </div>
               <div className='about_experienceTitle'>
-                Software Engineer Intern at North South
-                University (2/2019 – 6/2019)
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Software Engineer Intern at North South
+                  University{" "}
+                </span>
+                (2/2019 – 6/2019)
               </div>
               <div className='about_experienceDetails'>
                 <p>
@@ -128,14 +171,16 @@ const About = (props) => {
                 </p>
               </div>
               <div className='about_experienceFeatures'>
-                Some Key Features - Data Entry (work order,
-                suppliers details, asset details etc.),
-                Asset Allocation (allocate/deallocate to
-                users, labs etc.), Report issues (create
-                ticket, report issues on assets), Assign
-                Task (assign reported tasks to support
-                stuff), Update working status (ticket
-                open/closed/working etc.).
+                <span style={{ color: "#ee4540" }}>
+                  Some Key Features -{" "}
+                </span>{" "}
+                Data Entry (work order, suppliers details,
+                asset details etc.), Asset Allocation
+                (allocate/deallocate to users, labs etc.),
+                Report issues (create ticket, report issues
+                on assets), Assign Task (assign reported
+                tasks to support stuff), Update working
+                status (ticket open/closed/working etc.).
               </div>
               <div className='about_about_experienceTools'>
                 Languages and Technology - PHP (Framework -
@@ -157,10 +202,16 @@ const About = (props) => {
           <div className='about__trainingItem'>
             <div className='about__trainingItem1'>
               <div className='about_trainingPeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
                 11/2017 – 11/2017
               </div>
               <div className='about_trainingTitle'>
-                Google Developer DevFest Bangladesh 2017
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Google Developer DevFest Bangladesh 2017
+                </span>
               </div>
               <div className='about_trainingDetails'>
                 <p>
@@ -173,11 +224,17 @@ const About = (props) => {
             </div>
             <div className='about__trainingItem2'>
               <div className='about_trainingPeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
                 12/2017 – 03/2018
               </div>
               <div className='about_trainingTitle'>
-                Top-up IT Training (Android Application
-                Development)
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Top-up IT Training (Android Application
+                  Development)
+                </span>
               </div>
               <div className='about_trainingDetails'>
                 <p>
@@ -205,10 +262,16 @@ const About = (props) => {
           <div className='about_volunteeringItem'>
             <div className='about_volunteeringItem1'>
               <div className='about_volunteeringPeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
                 01/2007 – 06/2011
               </div>
               <div className='about_volunteeringTitle'>
-                Bangladesh Scouts– Social Cause
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Bangladesh Scouts– Social Cause
+                </span>
               </div>
               <div className='about_volunteeringDetails'>
                 <p>
@@ -225,10 +288,16 @@ const About = (props) => {
             </div>
             <div className='about_volunteeringItem2'>
               <div className='about_volunteeringPeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
                 01/2011 – 06/2013
               </div>
               <div className='about_volunteeringTitle'>
-                Bangladesh National Cadet Corps (BNCC)
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Bangladesh National Cadet Corps (BNCC)
+                </span>
               </div>
               <div className='about_volunteeringDetails'>
                 <p>

@@ -1,11 +1,9 @@
 .home {
-  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  background-color: #1d1e22;
   object-fit: contain;
   display: flex;
   justify-content: center;
+  margin: 10px;
+  padding: 5px;
 }
 .home__item {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);

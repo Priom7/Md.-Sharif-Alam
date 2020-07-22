@@ -1,0 +1,178 @@
+.skill {
+  object-fit: contain;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill__icons {
+  position: relative;
+  top: 5px;
+  right: 2px;
+  padding: 2px;
+}
+
+.skill__item {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  background-color: #1d1e22;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 15px;
+  border: 1px solid #ee4540;
+  /* position: relative;
+        animation: myfirst 5s;
+        animation-direction: alternate;
+     */
+}
+
+.skill__header {
+  color: #ee4540;
+}
+
+.skill__summary {
+  color: wheat;
+}
+
+.skill__details {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  background-color: #1d1e22;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid #ee4540;
+  /* position: relative;
+          animation: myfirst 5s;
+          animation-direction: alternate;
+       */
+}
+
+.skill__detailsHeader {
+  color: #ee4540;
+  align-self: center;
+}
+
+.skill__detailsItem {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+}
+
+.skill__detailsLanguages {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsDatabase {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsOs {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsFramework {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsHosting {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsVersion {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  display: flex;
+  color: wheat;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.skill__detailsVersion:hover,
+.skill__detailsOs:hover,
+.skill__detailsLanguages:hover,
+.skill__detailsDatabase:hover,
+.skill__detailsFramework:hover,
+.skill__detailsHosting:hover {
+  transform: scale(1.05);
+  border: 1px solid #ee4540;
+}
+
+.skill__imageItem {
+  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: wheat;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
