@@ -32,10 +32,10 @@ const BackGround = (props) => {
           11: img12,
         }}
         how={
-          100
+          50
         } /* Pass the number of images Sky will render choosing randomly */
         time={40} /* time of animation */
-        size={"100px"} /* size of the rendered images */
+        size={"20px"} /* size of the rendered images */
         background={"#1D1E22"}
       />
     </div>

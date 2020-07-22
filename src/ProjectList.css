@@ -1,3 +1,34 @@
+/* .project {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  background-color: #1d1e22;
+  color: #ee4540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 15px;
+  border: 1px solid #ee4540;
+} */
+
+.project__principles {
+  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  background-color: #1d1e22;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 15px;
+  border: 1px solid #ee4540;
+}
 .project__list {
   list-style: none;
   margin: 0 auto;
@@ -5,6 +36,14 @@
   width: 90%;
   max-width: 50rem;
   display: flex;
+  align-self: center;
   justify-content: center;
   flex-wrap: wrap;
+  transition: transform 0.2s;
+}
+
+.project__list > li:hover {
+  border: 1px solid #ee4540;
+  transform: scale(1.05);
+  border-radius: 15px;
 }

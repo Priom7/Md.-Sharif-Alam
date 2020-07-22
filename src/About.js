@@ -51,10 +51,13 @@ const About = (props) => {
           <span style={{ color: "#ee4540" }}>
             self-motivated
           </span>
-          . Objective is to work in such an environment
-          where I can use my maximum potential while working
-          and enhance my professional skills with learning
-          and experience for career growth.
+          .I always try to keep my self{" "}
+          <span style={{ color: "#ee4540" }}>Updated</span>{" "}
+          with the newest technologies and the tools
+          available. Objective is to work in such an
+          environment where I can use my maximum potential
+          while working and enhance my professional skills
+          with learning and experience for career growth.
         </p>
       </div>
       <div className='about__education'>

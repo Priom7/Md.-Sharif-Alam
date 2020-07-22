@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-sky": "^1.1.0",
+    "react-swipeable-views": "^0.13.9",
     "react-transition-group": "^4.4.1"
   },
   "scripts": {

@@ -29,6 +29,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import "./Navigations.css";
 import BackGround from "./BackGround";
+import ProjectTab from "./ProjectTab";
 
 const drawerWidth = 240;
 
@@ -221,7 +222,7 @@ const Navigations = (props) => {
           <Skills></Skills>
         </Route>
         <Route path='/projects'>
-          <Projects></Projects>
+          <ProjectTab></ProjectTab>
         </Route>
       </main>
     </div>
