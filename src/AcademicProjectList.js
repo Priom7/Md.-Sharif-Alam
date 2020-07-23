@@ -1,13 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import "./ProjectList.css";
-import BackGround from "./BackGround";
-import react from "./images/react.png";
-import css from "./images/css.png";
-import material from "./images/material.png";
-import Sky from "react-sky";
 
-const ProjectList = (props) => {
+const AcademicProjectList = (props) => {
   if (props.items.length === 0) {
     return <div>No Project Found</div>;
   }
@@ -26,23 +20,10 @@ const ProjectList = (props) => {
             <strong>Scalability </strong>
           </span>
         </div>
-        <Sky
-          images={{
-            0: react,
-            1: css,
-            2: material,
-          }}
-          how={
-            50
-          } /* Pass the number of images Sky will render choosing randomly */
-          time={40} /* time of animation */
-          size={"10px"} /* size of the rendered images */
-          background={"#1D1E22"}
-        />
       </div>
       <ul className='project__list'>
         {props.items.map((project) => {
-          if (project.projectType === "frontend") {
+          if (project.projectType === "academic") {
             return (
               <ProjectItem
                 title={project.title}
@@ -60,4 +41,4 @@ const ProjectList = (props) => {
   );
 };
 
-export default ProjectList;
+export default AcademicProjectList;

@@ -204,25 +204,23 @@
 }
 
 .about_volunteeringItem1 {
-  -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
   padding: 10px;
-  transition: transform 0.2s;
+
   border-radius: 15px;
 }
-.about_volunteeringItem1:hover {
-  transform: scale(1.05);
-}
+
 .about_volunteeringItem2 {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: flex;
   flex-direction: column;
@@ -243,7 +241,7 @@
 .about__trainingItem1 {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: flex;
   flex-direction: column;
@@ -257,7 +255,7 @@
 .about__trainingItem2 {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: flex;
 
@@ -278,7 +276,7 @@
 .about__experienceItem1 {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -10,13 +10,13 @@ import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import { red } from "@material-ui/core/colors";
+
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import "./ProjectItem.css";
-import BackGround from "./BackGround";
+import Iframe from "react-iframe";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,12 +41,11 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: "wheat",
   },
 }));
 
 export default function ProjectItem(props) {
-  console.log(props);
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -56,77 +55,98 @@ export default function ProjectItem(props) {
 
   return (
     <li className='project_item'>
-      <Card className={classes.root}>
-        <CardHeader
-          className='card__header'
-          avatar={
-            <Avatar
-              aria-label='recipe'
-              className={classes.avatar}
-              src={props.imageUrl}
-            ></Avatar>
-          }
-          action={
-            <IconButton
-              className='card__icon'
-              aria-label='settings'
-            >
-              <MoreVertIcon className='card__icon' />
-            </IconButton>
-          }
-          title={<strong>{props.title}</strong>}
-        />
-        <CardMedia
-          className={classes.media}
-          image={props.imageUrl}
-          title='Paella dish'
-        />
-        <CardContent>
-          <Typography
-            variant='body2'
-            color='wheat'
-            component='p'
-          >
-            {<small>{props.description}</small>}
-          </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-          <IconButton
-            className='card__icon'
-            aria-label='add to favorites'
-          >
-            <FavoriteIcon className='card__icon' />
-          </IconButton>
-          <IconButton
-            className='card__icon'
-            aria-label='share'
-          >
-            <ShareIcon className='card__icon' />
-          </IconButton>
-          <IconButton
-            className={clsx(classes.expand, {
-              [classes.expandOpen]: expanded,
-            })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label='show more'
-          >
-            <ExpandMoreIcon className='card__icon' />
-          </IconButton>
-        </CardActions>
-        <Collapse
-          in={expanded}
-          timeout='auto'
-          unmountOnExit
-        >
+      <div className='project__card'>
+        <Card className={classes.root}>
+          <CardHeader
+            className='card__header'
+            avatar={
+              <Avatar
+                aria-label='projects'
+                className={classes.avatar}
+                src={props.imageUrl}
+              ></Avatar>
+            }
+            action={
+              <IconButton
+                className='card__icon'
+                aria-label='settings'
+              >
+                <MoreVertIcon className='card__icon' />
+              </IconButton>
+            }
+            title={<strong>{props.title}</strong>}
+          />
+          <CardMedia
+            className={classes.media}
+            image={props.imageUrl}
+            title='project__image'
+          />
           <CardContent>
-            <Typography paragraph>Method:</Typography>
-            <Typography paragraph>
-              {props.details}
+            <Typography
+              variant='body2'
+              color='wheat'
+              component='p'
+            >
+              {<small>{props.description}</small>}
             </Typography>
           </CardContent>
-        </Collapse>
-      </Card>
+          <CardActions disableSpacing>
+            <IconButton
+              className='card__icon'
+              aria-label='add to favorites'
+            >
+              <FavoriteIcon className='card__icon' />
+            </IconButton>
+            <IconButton
+              className='card__icon'
+              aria-label='share'
+            >
+              <ShareIcon className='card__icon' />
+            </IconButton>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label='show more'
+            >
+              <ExpandMoreIcon className='card__icon' />
+            </IconButton>
+          </CardActions>
+          <Collapse
+            in={expanded}
+            timeout='auto'
+            unmountOnExit
+          >
+            <CardContent>
+              <div className='card__details'>
+                <Typography paragraph>Tools:</Typography>
+                <div className='card__detailsList'>
+                  <Typography paragraph>
+                    {props.details.map((list) => (
+                      <div className='card__detailsToolList'>
+                        <ul>
+                          <li>
+                            <small className='center'>
+                              {list}
+                            </small>
+                          </li>
+                        </ul>
+                      </div>
+                    ))}
+                  </Typography>
+                </div>
+                <Iframe
+                  url={props.projectUrl}
+                  id='myId'
+                  className='card__iframe'
+                />
+              </div>
+            </CardContent>
+          </Collapse>
+        </Card>
+      </div>
     </li>
   );
 }

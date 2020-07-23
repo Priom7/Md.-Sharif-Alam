@@ -33,31 +33,40 @@ const About = (props) => {
           <InfoIcon> </InfoIcon> About Me
         </h1>
         <p className='about__objectiveDetails'>
-          I do love my profession and{" "}
+          I consider myself a{" "}
+          <span style={{ color: "#ee4540" }}>
+            Programmer
+          </span>{" "}
+          first then a{" "}
+          <span style={{ color: "#ee4540" }}>
+            Software Engineer
+          </span>
+          . It really doesn't matter what languages, tools,
+          programmes, frameworks etc. are out there, it's
+          just a matter of time for me to{" "}
+          <span style={{ color: "#ee4540" }}>adopt</span>. I
+          do love my profession and{" "}
           <span style={{ color: "#ee4540" }}>
             {" "}
             passionate
           </span>{" "}
           about it. As a person I am friendly,{" "}
           <span style={{ color: "#ee4540" }}>
-            hardworking
+            Hardworking
           </span>
           ,
           <span style={{ color: "#ee4540" }}>
             {" "}
-            adaptive
+            Adaptive
           </span>{" "}
           and{" "}
           <span style={{ color: "#ee4540" }}>
-            self-motivated
+            Self-motivated
           </span>
-          .I always try to keep my self{" "}
+          . I always try to keep my self{" "}
           <span style={{ color: "#ee4540" }}>Updated</span>{" "}
           with the newest technologies and the tools
-          available. Objective is to work in such an
-          environment where I can use my maximum potential
-          while working and enhance my professional skills
-          with learning and experience for career growth.
+          available.
         </p>
       </div>
       <div className='about__education'>

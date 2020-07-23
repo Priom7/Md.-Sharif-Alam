@@ -3,10 +3,64 @@
   width: calc(45% - 2rem);
   min-width: 17.5rem;
 }
+
+.project__card {
+  transition: transform 0.2s;
+}
+
+.project__card:hover {
+  border: 1px solid #ee4540;
+  transform: scale(1.05);
+  border-radius: 15px;
+}
 .card__header {
   color: #ee4540 !important;
 }
 
 .card__icon {
   color: #ee4540 !important;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 0; */
+}
+
+.card__detailsList {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: contain;
+  width: fit-content;
+}
+.card__detailsToolList {
+  object-fit: contain;
+  color: wheat;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  transition: transform 0.2s;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #1d1e22;
+}
+
+.card__detailsToolList:hover {
+  border: 1px solid #ee4540;
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+
+.card__iframe {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  display: initial;
+  transform: scale(0.6);
+  width: 400px;
+  height: 400px;
+  transform-origin: 0 0;
 }

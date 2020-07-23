@@ -16,7 +16,7 @@
 .skill__item {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: #1d1e22;
 
   display: flex;
@@ -44,7 +44,7 @@
 .skill__details {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: #1d1e22;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
 .skill__detailsLanguages {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
@@ -89,7 +89,7 @@
 .skill__detailsDatabase {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
@@ -103,7 +103,7 @@
 .skill__detailsOs {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
@@ -117,7 +117,7 @@
 .skill__detailsFramework {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
@@ -131,7 +131,7 @@
 .skill__detailsHosting {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
@@ -145,7 +145,7 @@
 .skill__detailsVersion {
   -webkit-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
-  box-shadow: 50px 18px 84px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   color: wheat;
   flex-direction: column;
