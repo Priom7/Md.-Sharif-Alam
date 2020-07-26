@@ -1,7 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import "./ProjectList.css";
-import BackGround from "./BackGround";
+import AspectRatioIcon from "@material-ui/icons/AspectRatio";
+import SpeedIcon from "@material-ui/icons/Speed";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import react from "./images/react.png";
 import css from "./images/css.png";
 import material from "./images/material.png";
@@ -15,15 +17,29 @@ const ProjectList = (props) => {
     <div className='project'>
       <div>
         <div className='project__principles'>
-          Three principles I follow :{" "}
           <span style={{ color: "#ee4540" }}>
-            <strong>Performance </strong>
+            <strong>
+              <SpeedIcon className='skill__icons'>
+                {" "}
+              </SpeedIcon>
+              Performance{" "}
+            </strong>
           </span>{" "}
           <span style={{ color: "#ee4540" }}>
-            <strong>Simplicity </strong>
+            <strong>
+              <CheckCircleIcon className='skill__icons'>
+                {" "}
+              </CheckCircleIcon>
+              Simplicity{" "}
+            </strong>
           </span>{" "}
           <span style={{ color: "#ee4540" }}>
-            <strong>Scalability </strong>
+            <strong>
+              <AspectRatioIcon className='skill__icons'>
+                {" "}
+              </AspectRatioIcon>
+              Scalability{" "}
+            </strong>
           </span>
         </div>
         <Sky
@@ -51,6 +67,7 @@ const ProjectList = (props) => {
                 imageUrl={project.imageUrl}
                 projectUrl={project.projectUrl}
                 projectType={project.projectType}
+                code={project.code}
               ></ProjectItem>
             );
           }

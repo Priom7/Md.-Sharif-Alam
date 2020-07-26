@@ -26,10 +26,9 @@ import {
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
-import Projects from "./Projects";
 import "./Navigations.css";
-import BackGround from "./BackGround";
 import ProjectTab from "./ProjectTab";
+import Contacts from "./Contacts";
 
 const drawerWidth = 240;
 
@@ -84,12 +83,7 @@ const Navigations = (props) => {
   };
 
   const drawer = (
-    <div
-      style={{
-        marginTop: "auto",
-        marginBottom: "auto",
-      }}
-    >
+    <div style={{}}>
       <div>
         <img
           className='nav_image'
@@ -210,8 +204,10 @@ const Navigations = (props) => {
           </Drawer>
         </Hidden>
       </nav>
+
       <main className={classes.content}>
         <div className={classes.toolbar} />
+
         <Route path='/home'>
           <Home></Home>
         </Route>
@@ -223,6 +219,9 @@ const Navigations = (props) => {
         </Route>
         <Route path='/projects'>
           <ProjectTab></ProjectTab>
+        </Route>
+        <Route path='/contact'>
+          <Contacts></Contacts>
         </Route>
       </main>
     </div>

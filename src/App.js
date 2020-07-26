@@ -1,14 +1,19 @@
 import React from "react";
 
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Navigation from "./Navigations";
 
 function App() {
   return (
     <div className='app'>
       <Router>
-        <Navigation></Navigation>
+        <Redirect to='/home'></Redirect>
+        <Navigation></Navigation>{" "}
       </Router>
     </div>
   );

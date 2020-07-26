@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import {
   makeStyles,
   useTheme,
@@ -17,15 +18,20 @@ import covid from "./images/covid19-1-web.PNG";
 import weather from "./images/weather-phone.PNG";
 import mygram from "./images/mygra1.PNG";
 import share from "./images/Share-1-web.PNG";
+import tours from "./images/myTours.PNG";
 import profile from "./images/profile.PNG";
 import sla from "./images/academic/cse299.png";
+import java from "./images/academic/cse215.png";
+import tutor from "./images/academic/cse311.png";
 import printer from "./images/academic/cse499.jpg";
 import translator from "./images/academic/cse327.PNG";
 import dld from "./images/academic/cse231.jpg";
 import rover from "./images/academic/cse323.jpg";
 import intern from "./images/academic/cse498.PNG";
+import construction from "./images/construction.png";
 import "./ProjectTab.css";
 import AcademicProjectList from "./AcademicProjectList";
+import FunProjectList from "./FunProjectList";
 
 const Project = [
   {
@@ -56,13 +62,35 @@ const Project = [
     imageUrl: amazon,
     projectUrl:
       "https://xenodochial-spence-dd4817.netlify.app/",
-    code: "link",
+    code:
+      "https://github.com/Priom7/Ecommerce-Web-Application",
     details: [
       "React JS",
       "redux-store",
       "netlify-deployment",
       "firebase-auth",
       "flex-box",
+    ],
+  },
+  {
+    title: "My Tours (Full Stack MERN)",
+    projectType: "frontend",
+    description:
+      "An WEB App where users can share their tours experience with location (Google Map API) and details. Images are auto deleted as it's using Heroku free Package",
+    imageUrl: tours,
+    projectUrl: "https://mern-my-tours.web.app/",
+    code: "https://github.com/Priom7/Node_Express_Backend",
+    details: [
+      "MongoDb",
+      "Express JS",
+      "React JS",
+      "Node JS",
+      "Google Map API",
+      "mongoose",
+      "json-webtoken",
+      "multer",
+      "firebase-deployment (frontend)",
+      "heroku-deployment (backend)",
     ],
   },
   {
@@ -73,7 +101,7 @@ const Project = [
     imageUrl: covid,
     projectUrl:
       "https://priceless-wescoff-783a66.netlify.app/",
-    code: "link",
+    code: "https://github.com/Priom7/COVID_19_info",
     details: [
       "React JS",
       "material-ui",
@@ -91,7 +119,8 @@ const Project = [
       "Weather info PWA where users can get weather data of cities",
     imageUrl: weather,
     projectUrl: "https://gifted-joliot-e609d7.netlify.app/",
-    code: "link",
+    code:
+      "https://github.com/Priom7/Weather-Forecasting-PWA",
     details: [
       "React JS",
       "Openweathermap-api",
@@ -100,13 +129,15 @@ const Project = [
     ],
   },
   {
-    title: "Click and Share",
+    title: "Click and Share (Full Stack)",
     projectType: "frontend",
     description:
       "Social media application like Instagram where users can share images and comment on them ",
     imageUrl: mygram,
-    view: "Link",
-    code: "link",
+    projectUrl:
+      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
+    code:
+      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
     details: [
       "React JS",
       "material-ui",
@@ -117,13 +148,13 @@ const Project = [
     ],
   },
   {
-    title: "Share A Thought",
+    title: "Share A Thought (Full Stack)",
     projectType: "frontend",
     description:
       "Social media application where users can share posts. Real time activity notifications implemented.",
     imageUrl: share,
     projectUrl: "https://brave-sammet-880409.netlify.app/",
-    code: "link",
+    code: "https://github.com/Priom7/Share-A-Thought-",
     details: [
       "React JS",
       "Redux",
@@ -139,8 +170,10 @@ const Project = [
     description:
       "3D printer made with Arduino Mega microprocessor, RAMPS shield etc. at a very low cost. These product is capable of printing 3D designed shapes.",
     imageUrl: printer,
-    projectUrl: "https://www.youtube.com/embed/sKB1i9OT9A0",
-    code: "link",
+    projectUrl:
+      "https://drive.google.com/file/d/1NEKJ08FxGFf3bOwdv0kKvPtE_30G292P/preview",
+
+    code: "https://www.youtube.com/embed/sKB1i9OT9A0",
     details: [
       "Arduino Mega",
       "RAMPS",
@@ -156,7 +189,7 @@ const Project = [
     imageUrl: intern,
     projectUrl:
       "https://drive.google.com/file/d/17bKbt0sfUdEGHjLHbfWyG5nE7P9UeH_j/preview",
-    code: "link",
+    code: "https://github.com/Priom7/AssetManagement",
     details: [
       "Laravel",
       "PHP",
@@ -176,8 +209,10 @@ const Project = [
     description:
       "Speaking and Listening Assistant (SLA) is a device for helping the deaf and mute people in their daily life. This system contains Smart Gloves Device with sensors attached and an Android Application",
     imageUrl: sla,
-    projectUrl: "https://www.youtube.com/embed/478lusjvlwM",
-    code: "link",
+    projectUrl:
+      "https://drive.google.com/file/d/1o8KqV0dgS9UB0drIF60f0nv88uwM8M0T/preview",
+    code:
+      "https://github.com/Priom7/CSE-299-Speaking-and-Listening-Assistant-Smart-Gloves-and-App-",
     details: [
       "Arduino UNO",
       "Android Studio",
@@ -195,7 +230,8 @@ const Project = [
       "An android application which can detect texts from image and speech, then translate it into different languages.",
     imageUrl: translator,
     projectUrl: "https://www.youtube.com/embed/OXSLNfYBeBc",
-    code: "link",
+    code:
+      "https://github.com/Priom7/CSE-327-Recognizing-Text-and-Translate-from-Image-",
     details: ["Android Studio", "OpenCV", "Yandex API"],
   },
   {
@@ -206,7 +242,8 @@ const Project = [
     imageUrl: rover,
     projectUrl:
       "https://drive.google.com/file/d/10AwknUIMUjf4ntbge1KeFa7sbhx4uM0h/preview",
-    code: "link",
+    code:
+      "https://drive.google.com/file/d/10AwknUIMUjf4ntbge1KeFa7sbhx4uM0h/preview",
     details: [
       "MIT App Inventor",
       "Arduino Microprocessor",
@@ -214,14 +251,51 @@ const Project = [
     ],
   },
   {
-    title: "Sequential Logic Design (DLD) (CSE 323)",
+    title: "Sequential Logic Design (DLD) (CSE 231)",
     projectType: "academic",
     description:
       "Sequentially prints certain numbers and characters with 7-Segment Led",
     imageUrl: dld,
     projectUrl: "https://www.youtube.com/embed/W67eyAkgPiQ",
-    code: "link",
+    code: "https://www.youtube.com/embed/W67eyAkgPiQ",
     details: ["7-Segment LED", "Registers", "Capacitors"],
+  },
+  {
+    title: "Tutor Finder (CSE 311)",
+    projectType: "academic",
+    description:
+      "Web based project done with raw PHP and MySQL Relation Database. Here Tutors can register with their info and other users can search of Tutors according to their demands.",
+    imageUrl: tutor,
+    projectUrl:
+      "https://emgithub.com/Priom7/CSE-311-Tutor-Finder-/blob/master/Tutor_Finder-Database/Tutor_Finder%20(Database)/project_experiment%20(2).sql",
+    code: "https://github.com/Priom7/CSE-311-Tutor-Finder-",
+    details: [
+      "Raw PHP",
+      "MySQL",
+      "Relational Database",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    title: "Restaurant Management System Java (CSE 215)",
+    projectType: "academic",
+    description:
+      "Desktop app restaurant management system with bill/receipt generator with calculator and an currency convertor",
+    imageUrl: java,
+    projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
+    code: "https://github.com/Priom7/CSE-215-Java-Project-",
+    details: ["Java", "NetBeans"],
+  },
+  {
+    title: "Restaurant Management System Java (CSE 215)",
+    projectType: "fun",
+    description:
+      "Desktop app restaurant management system with bill/receipt generator with calculator and an currency convertor",
+    imageUrl: java,
+    projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
+    code: "https://github.com/Priom7/CSE-215-Java-Project-",
+    details: ["Java", "NetBeans"],
   },
 ];
 
@@ -291,15 +365,13 @@ export default function ProjectTab() {
           variant='fullWidth'
           aria-label='full width tabs example'
         >
-          <Tab
-            label='Frontend Projects'
-            {...a11yProps(0)}
-          />
-          <Tab label='Backend Projects' {...a11yProps(1)} />
+          <Tab label='Recent Projects' {...a11yProps(0)} />
           <Tab
             label='Academic Projects'
-            {...a11yProps(2)}
+            {...a11yProps(1)}
           />
+          <Tab label='Backend Projects' {...a11yProps(2)} />
+          {/* <Tab label='Fun Projects' {...a11yProps(3)} /> */}
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -314,25 +386,47 @@ export default function ProjectTab() {
         >
           <ProjectList items={Project}></ProjectList>
         </TabPanel>
+
         <TabPanel
           value={value}
           index={1}
-          dir={theme.direction}
-        >
-          <h1 style={{ color: "wheat" }}>
-            Working On an Unique Way to Represent
-            Backend/Server side Programming Skills
-          </h1>
-        </TabPanel>
-        <TabPanel
-          value={value}
-          index={2}
           dir={theme.direction}
         >
           <AcademicProjectList
             items={Project}
           ></AcademicProjectList>
         </TabPanel>
+        <TabPanel
+          value={value}
+          index={2}
+          dir={theme.direction}
+        >
+          <h1 style={{ color: "wheat" }}>
+            Working On an Unique Way to Represent
+            Backend/Server side Programming Skills.
+          </h1>
+          <h4 style={{ color: "#ee4540" }}>
+            Fell free to check my recent works on GitHub
+            Profile{" "}
+            <a href='https://github.com/Priom7'>
+              <GitHubIcon></GitHubIcon>
+            </a>
+          </h4>
+          <img
+            width='50%'
+            height='50%'
+            position='relative'
+            src={construction}
+            alt='under_construction'
+          ></img>
+        </TabPanel>
+        {/* <TabPanel
+          value={value}
+          index={3}
+          dir={theme.direction}
+        >
+          <FunProjectList items={Project}></FunProjectList>
+        </TabPanel> */}
       </SwipeableViews>
     </div>
   );

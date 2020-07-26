@@ -8,22 +8,8 @@ import PanToolIcon from "@material-ui/icons/PanTool";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import ListIcon from "@material-ui/icons/List";
 import CodeIcon from "@material-ui/icons/Code";
-import img1 from "./images/firebase.png";
-import img2 from "./images/js.png";
-import img3 from "./images/js2.png";
-import img4 from "./images/json.png";
-import img5 from "./images/laravel.png";
-import img6 from "./images/mongodb.png";
-import img7 from "./images/mysql.png";
-import img8 from "./images/node.png";
-import img9 from "./images/php.png";
-import img10 from "./images/react.png";
-import img11 from "./images/schema.png";
-import img12 from "./images/java.png";
-import img13 from "./images/git.png";
-import img14 from "./images/npm.png";
-import img15 from "./images/css.png";
 import "./Skills.css";
+import SkillImageBanner from "./SkillImageBanner";
 
 const Skills = (props) => {
   return (
@@ -147,6 +133,9 @@ const Skills = (props) => {
             <div className='skill__detailsFramework_laravel'>
               Laravel
             </div>
+            <div className='skill__detailsFramework_laravel'>
+              Postman
+            </div>
             <div className='skill__detailsFramework_flexbox'>
               FlexBox
             </div>
@@ -189,173 +178,7 @@ const Skills = (props) => {
           </div>
         </div>
       </div>
-      <div className='skill__imageItem'>
-        <img
-          src={img1}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img2}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img3}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img4}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img5}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img6}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img7}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img8}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img9}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img10}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img11}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img12}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img13}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img14}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-        <img
-          src={img15}
-          style={{
-            width: "10%",
-            display: "flex",
-            alignSelf: "center",
-            padding: "10px",
-            margin: "10px",
-          }}
-          alt='image'
-        ></img>
-      </div>
+      <SkillImageBanner></SkillImageBanner>
     </div>
   );
 };

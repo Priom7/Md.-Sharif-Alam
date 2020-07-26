@@ -32,8 +32,6 @@
   border-radius: 15px;
   border: 1px solid #ee4540;
   position: relative;
-  animation: myfirst 5s;
-  animation-direction: alternate;
 }
 
 .about__objectiveHeader {
@@ -51,13 +49,11 @@
   margin: 10px;
   padding: 10px;
   flex-direction: column;
-  /* align-self: center; */
+
   align-items: center;
   border-radius: 15px;
   border: 1px solid #ee4540;
   position: relative;
-  animation: myfirst 5s;
-  animation-direction: alternate;
 }
 
 .about__educationHeader {
@@ -79,8 +75,7 @@
   border-radius: 15px;
   border: 1px solid #ee4540;
   position: relative;
-  animation: myfirst 5s;
-  animation-direction: alternate;
+
   width: 450px;
 }
 
@@ -103,8 +98,7 @@
   border-radius: 15px;
   border: 1px solid #ee4540;
   position: relative;
-  animation: myfirst 5s;
-  animation-direction: alternate;
+
   width: 450px;
 }
 .about__training:hover {
@@ -131,8 +125,7 @@
   border-radius: 15px;
   border: 1px solid #ee4540;
   position: relative;
-  animation: myfirst 5s;
-  animation-direction: alternate;
+
   width: 450px;
 }
 
@@ -282,19 +275,5 @@
   align-items: center;
   margin: 10px;
   padding: 10px;
-
   border-radius: 15px;
-}
-
-@keyframes myfirst {
-  0% {
-    background: black;
-    left: 200px;
-    top: 0px;
-  }
-  25% {
-    background: #1d1e22;
-    left: 0px;
-    top: 0px;
-  }
 }

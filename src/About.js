@@ -12,21 +12,27 @@ import "./About.css";
 const About = (props) => {
   return (
     <div className='about'>
-      <Button
-        variant='contained'
-        color='primary'
-        size='large'
-        startIcon={<SaveIcon />}
-        style={{
-          background: "#ee4540",
-          margin: "10px",
-          width: "300px",
-          alignSelf: "center",
-          color: "wheat",
-        }}
+      <a
+        style={{ alignSelf: "center" }}
+        href='https://drive.google.com/file/d/1KyWaHRVpExGrP4r0WMnmtuOb7Uw9thGh/view?usp=sharing'
       >
-        Download CV
-      </Button>
+        {" "}
+        <Button
+          variant='contained'
+          color='primary'
+          size='large'
+          startIcon={<SaveIcon />}
+          style={{
+            background: "#ee4540",
+            margin: "10px",
+            width: "300px",
+            alignSelf: "center",
+            color: "wheat",
+          }}
+        >
+          Download CV
+        </Button>
+      </a>
 
       <div className='about__objective'>
         <h1 className='about__objectiveHeader'>

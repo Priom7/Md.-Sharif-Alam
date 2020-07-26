@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -12,7 +14,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
+
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import "./ProjectItem.css";
@@ -48,9 +50,13 @@ const useStyles = makeStyles((theme) => ({
 export default function ProjectItem(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+  const [text, setText] = React.useState(
+    "Details and Preview"
+  );
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
+    setText("");
   };
 
   return (
@@ -71,7 +77,7 @@ export default function ProjectItem(props) {
                 className='card__icon'
                 aria-label='settings'
               >
-                <MoreVertIcon className='card__icon' />
+                {/* <MoreVertIcon className='card__icon' /> */}
               </IconButton>
             }
             title={<strong>{props.title}</strong>}
@@ -95,13 +101,18 @@ export default function ProjectItem(props) {
               className='card__icon'
               aria-label='add to favorites'
             >
-              <FavoriteIcon className='card__icon' />
+              <a href={props.projectUrl}>
+                <VisibilityIcon className='card__icon'></VisibilityIcon>
+              </a>
             </IconButton>
             <IconButton
               className='card__icon'
               aria-label='share'
             >
-              <ShareIcon className='card__icon' />
+              <a href={props.code}>
+                {" "}
+                <GitHubIcon className='card__icon'></GitHubIcon>
+              </a>
             </IconButton>
             <IconButton
               className={clsx(classes.expand, {
@@ -111,6 +122,12 @@ export default function ProjectItem(props) {
               aria-expanded={expanded}
               aria-label='show more'
             >
+              <Typography>
+                {" "}
+                <small style={{ color: "#ee4540" }}>
+                  {text}
+                </small>
+              </Typography>
               <ExpandMoreIcon className='card__icon' />
             </IconButton>
           </CardActions>

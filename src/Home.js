@@ -15,18 +15,22 @@ const Home = (props) => {
           </span>
         </h1>
         <p>
-          Software Engineer / Full-Stack multi platform
-          software developer.{" "}
+          Software Engineer / Full-Stack Multi Platform
+          Software Developer.{" "}
         </p>
         <div className='home__icons'>
           <p>
             <span>
               {" "}
-              <LinkedInIcon></LinkedInIcon>
+              <a href='https://www.linkedin.com/in/md-sharif-alam/'>
+                <LinkedInIcon></LinkedInIcon>
+              </a>
             </span>
             <span>
               {" "}
-              <GitHubIcon></GitHubIcon>
+              <a href='https://github.com/Priom7'>
+                <GitHubIcon></GitHubIcon>
+              </a>
             </span>
           </p>
         </div>
