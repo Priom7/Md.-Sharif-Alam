@@ -76,7 +76,7 @@ const Project = [
     title: "My Tours (Full Stack MERN)",
     projectType: "frontend",
     description:
-      "An WEB App where users can share their tours experience with location (Google Map API) and details. Images are auto deleted as it's using Heroku free Package",
+      "A Web App where users can share their tours experience with location (Google Map API) and details. Images are auto deleted as it's using Heroku free Package",
     imageUrl: tours,
     projectUrl: "https://mern-my-tours.web.app/",
     code: "https://github.com/Priom7/Node_Express_Backend",

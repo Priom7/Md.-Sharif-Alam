@@ -69,7 +69,7 @@ const About = (props) => {
           <span style={{ color: "#ee4540" }}>
             Self-motivated
           </span>
-          . I always try to keep my self{" "}
+          . I always try to keep myself{" "}
           <span style={{ color: "#ee4540" }}>Updated</span>{" "}
           with the newest technologies and the tools
           available.
