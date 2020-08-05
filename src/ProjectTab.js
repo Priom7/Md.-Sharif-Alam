@@ -14,7 +14,7 @@ import Box from "@material-ui/core/Box";
 import ProjectList from "./ProjectList";
 import myFlix from "./images/my-flix-web.PNG";
 import amazon from "./images/ecommerce2.PNG";
-import covid from "./images/covid19-1-web.PNG";
+import covid from "./images/covid.PNG";
 import weather from "./images/weather-phone.PNG";
 import mygram from "./images/mygra1.PNG";
 import share from "./images/Share-1-web.PNG";
@@ -97,7 +97,7 @@ const Project = [
     title: "Covid-19 Info.",
     projectType: "frontend",
     description:
-      "Covid-19 info tracker PWA on daily basis. Users can search data of individual Country",
+      "Covid-19 info tracker PWA on daily basis. Users can search data of individual Country and Map will automatically change its coordinates towards that country.",
     imageUrl: covid,
     projectUrl:
       "https://priceless-wescoff-783a66.netlify.app/",
@@ -105,7 +105,8 @@ const Project = [
     details: [
       "React JS",
       "material-ui",
-      "open-source-api",
+      "disease sh api",
+      "react-leaflet.js",
       "chart-js",
       "react-countUp",
       "flex-box",
