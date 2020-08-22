@@ -29,11 +29,31 @@ import dld from "./images/academic/cse231.jpg";
 import rover from "./images/academic/cse323.jpg";
 import intern from "./images/academic/cse498.PNG";
 import construction from "./images/construction.png";
+import chatroom from "./images/academic/chat-room.png";
 import "./ProjectTab.css";
 import AcademicProjectList from "./AcademicProjectList";
 import FunProjectList from "./FunProjectList";
 
 const Project = [
+  {
+    title: "Chat Room",
+    projectType: "frontend",
+    description:
+      "Its an Chat Room application where users can Signup via Gmail account, login, create room, share room links and chat.",
+    imageUrl: chatroom,
+    projectUrl: "https://chat-room-6936d.web.app/",
+    code: "https://github.com/Priom7/Chat-Room-App",
+    details: [
+      "React JS",
+      "UI",
+      "gmail-authentication",
+      "context-api",
+      "material-ui",
+      "firebase-auth",
+      "firestore-database",
+      "flex-box",
+    ],
+  },
   {
     title: "My Movies",
     projectType: "frontend",

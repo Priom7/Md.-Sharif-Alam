@@ -77,7 +77,7 @@ export default function ProjectItem(props) {
                 className='card__icon'
                 aria-label='settings'
               >
-                {/* <MoreVertIcon className='card__icon' /> */}
+                {/* <span>new</span> */}
               </IconButton>
             }
             title={<strong>{props.title}</strong>}
