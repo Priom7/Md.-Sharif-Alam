@@ -4,7 +4,7 @@ import SwipeableViews from "react-swipeable-views";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import {
   makeStyles,
-  useTheme,
+  useTheme
 } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
@@ -13,13 +13,15 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import ProjectList from "./ProjectList";
 import myFlix from "./images/my-flix-web.PNG";
+import myBrand from "./images/academic/my-brand.jpg";
 import amazon from "./images/ecommerce2.PNG";
 import covid from "./images/covid.PNG";
 import weather from "./images/weather-phone.PNG";
-import mygram from "./images/mygra1.PNG";
+import mygram from "./images/my-gram.png";
 import share from "./images/Share-1-web.PNG";
 import tours from "./images/myTours.PNG";
 import profile from "./images/profile.PNG";
+import adminPannel from "./images/academic/adminpannel.jpg";
 import sla from "./images/academic/cse299.png";
 import java from "./images/academic/cse215.png";
 import tutor from "./images/academic/cse311.png";
@@ -36,10 +38,33 @@ import FunProjectList from "./FunProjectList";
 
 const Project = [
   {
+    title: "Online Super Shop (Highly Scalable)",
+    projectType: "frontend",
+    description:
+      "It's a highly scalable E-Commerce shopping platform. Here Sellers can Post their products and customers can buy. ",
+    imageUrl: myBrand,
+    projectUrl:
+      "https://sleepy-montalcini-d90279.netlify.app/",
+    code: "https://github.com/Priom7/My-Brand-",
+    details: [
+      "React JS",
+      "Redux",
+      "gmail-authentication",
+      "Reselect",
+      "Redux-Logger",
+      "firebase-auth",
+      "firestore-database",
+      "flex-box",
+      "React-Hooks",
+      "node-Sass",
+      "SCSS"
+    ]
+  },
+  {
     title: "Chat Room",
     projectType: "frontend",
     description:
-      "Its an Chat Room application where users can Signup via Gmail account, login, create room, share room links and chat.",
+      "Its a Chat Room application where users can Signup via Gmail account, login, create room, share room links and chat.",
     imageUrl: chatroom,
     projectUrl: "https://chat-room-6936d.web.app/",
     code: "https://github.com/Priom7/Chat-Room-App",
@@ -51,8 +76,31 @@ const Project = [
       "material-ui",
       "firebase-auth",
       "firestore-database",
+      "flex-box"
+    ]
+  },
+  {
+    title: "Basic Admin Task (React & Redux)",
+    projectType: "frontend",
+    description:
+      "It's a basic Admin task Panel where Admin can Enable/Disable, Add/Delete Items. Authorization and Authentication Added. (Done as Task) ",
+    imageUrl: adminPannel,
+    projectUrl:
+      "https://awesome-poincare-9606e1.netlify.app/",
+    code: "https://github.com/Priom7/E-Commerce-Test-",
+    details: [
+      "React JS",
+      "Redux",
+      "gmail-authentication",
+      "Reselect",
+      "Redux-Logger",
+      "firebase-auth",
+      "firestore-database",
       "flex-box",
-    ],
+      "React-Hooks",
+      "node-Sass",
+      "SCSS"
+    ]
   },
   {
     title: "My Movies",
@@ -71,8 +119,26 @@ const Project = [
       "react-youtube",
       "firebase-hosting",
       "flex-box",
-      "axios",
-    ],
+      "axios"
+    ]
+  },
+  {
+    title: "Click and Share (Full Stack)",
+    projectType: "frontend",
+    description:
+      "Social media application like Instagram where users can share images and comment on them ",
+    imageUrl: mygram,
+    projectUrl: "https://keen-neumann-fca679.netlify.app/",
+    code:
+      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
+    details: [
+      "React JS",
+      "material-ui",
+      "firebase-auth",
+      "firestore-database",
+      "firebase-hosting",
+      "flex-box"
+    ]
   },
   {
     title: "Ecommerce Application",
@@ -89,8 +155,8 @@ const Project = [
       "redux-store",
       "netlify-deployment",
       "firebase-auth",
-      "flex-box",
-    ],
+      "flex-box"
+    ]
   },
   {
     title: "My Tours (Full Stack MERN)",
@@ -110,8 +176,8 @@ const Project = [
       "json-webtoken",
       "multer",
       "firebase-deployment (frontend)",
-      "heroku-deployment (backend)",
-    ],
+      "heroku-deployment (backend)"
+    ]
   },
   {
     title: "Covid-19 Info.",
@@ -130,8 +196,8 @@ const Project = [
       "chart-js",
       "react-countUp",
       "flex-box",
-      "axios",
-    ],
+      "axios"
+    ]
   },
   {
     title: "City Weather Info",
@@ -146,28 +212,10 @@ const Project = [
       "React JS",
       "Openweathermap-api",
       "flex-box",
-      "axios",
-    ],
+      "axios"
+    ]
   },
-  {
-    title: "Click and Share (Full Stack)",
-    projectType: "frontend",
-    description:
-      "Social media application like Instagram where users can share images and comment on them ",
-    imageUrl: mygram,
-    projectUrl:
-      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
-    code:
-      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
-    details: [
-      "React JS",
-      "material-ui",
-      "firebase-auth",
-      "firestore-database",
-      "firebase-hosting",
-      "flex-box",
-    ],
-  },
+
   {
     title: "Share A Thought (Full Stack)",
     projectType: "frontend",
@@ -182,8 +230,8 @@ const Project = [
       "firebase-authentication",
       "firestore-database",
       "material-ui",
-      "firebase-hosting",
-    ],
+      "firebase-hosting"
+    ]
   },
   {
     title: "3D Printer For Industrial Usage (CSE 499)",
@@ -199,8 +247,8 @@ const Project = [
       "Arduino Mega",
       "RAMPS",
       "Marlin Firmware",
-      "Check attached documents for more.",
-    ],
+      "Check attached documents for more."
+    ]
   },
   {
     title: "Software Engineer Intern (CSE 498)",
@@ -220,8 +268,8 @@ const Project = [
       "HTML",
       "CSS",
       "Jquery",
-      "AJAX",
-    ],
+      "AJAX"
+    ]
   },
   {
     title:
@@ -240,8 +288,8 @@ const Project = [
       "Java",
       "Flex Sensors",
       "Gyroscope sensor",
-      "Bluetooth",
-    ],
+      "Bluetooth"
+    ]
   },
   {
     title:
@@ -253,7 +301,7 @@ const Project = [
     projectUrl: "https://www.youtube.com/embed/OXSLNfYBeBc",
     code:
       "https://github.com/Priom7/CSE-327-Recognizing-Text-and-Translate-from-Image-",
-    details: ["Android Studio", "OpenCV", "Yandex API"],
+    details: ["Android Studio", "OpenCV", "Yandex API"]
   },
   {
     title: "Android Controlled Robot (CSE 323)",
@@ -268,8 +316,8 @@ const Project = [
     details: [
       "MIT App Inventor",
       "Arduino Microprocessor",
-      "Bluetooth",
-    ],
+      "Bluetooth"
+    ]
   },
   {
     title: "Sequential Logic Design (DLD) (CSE 231)",
@@ -279,7 +327,7 @@ const Project = [
     imageUrl: dld,
     projectUrl: "https://www.youtube.com/embed/W67eyAkgPiQ",
     code: "https://www.youtube.com/embed/W67eyAkgPiQ",
-    details: ["7-Segment LED", "Registers", "Capacitors"],
+    details: ["7-Segment LED", "Registers", "Capacitors"]
   },
   {
     title: "Tutor Finder (CSE 311)",
@@ -295,8 +343,8 @@ const Project = [
       "MySQL",
       "Relational Database",
       "HTML",
-      "CSS",
-    ],
+      "CSS"
+    ]
   },
   {
     title: "Restaurant Management System Java (CSE 215)",
@@ -306,7 +354,7 @@ const Project = [
     imageUrl: java,
     projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
     code: "https://github.com/Priom7/CSE-215-Java-Project-",
-    details: ["Java", "NetBeans"],
+    details: ["Java", "NetBeans"]
   },
   {
     title: "Restaurant Management System Java (CSE 215)",
@@ -316,8 +364,8 @@ const Project = [
     imageUrl: java,
     projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
     code: "https://github.com/Priom7/CSE-215-Java-Project-",
-    details: ["Java", "NetBeans"],
-  },
+    details: ["Java", "NetBeans"]
+  }
 ];
 
 function TabPanel(props) {
@@ -343,20 +391,20 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired
 };
 
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
-    "aria-controls": `full-width-tabpanel-${index}`,
+    "aria-controls": `full-width-tabpanel-${index}`
   };
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: "#1d1e22",
-  },
+    backgroundColor: "#1d1e22"
+  }
 }));
 
 export default function ProjectTab() {
@@ -368,7 +416,7 @@ export default function ProjectTab() {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index) => {
+  const handleChangeIndex = index => {
     setValue(index);
   };
 

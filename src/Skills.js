@@ -11,7 +11,7 @@ import CodeIcon from "@material-ui/icons/Code";
 import "./Skills.css";
 import SkillImageBanner from "./SkillImageBanner";
 
-const Skills = (props) => {
+const Skills = props => {
   return (
     <div className='skill'>
       <div className='skill__item'>
@@ -128,7 +128,7 @@ const Skills = (props) => {
               Express JS
             </div>
             <div className='skill__detailsFramework_react'>
-              React JS
+              React JS (Redux & Hooks)
             </div>
             <div className='skill__detailsFramework_laravel'>
               Laravel
