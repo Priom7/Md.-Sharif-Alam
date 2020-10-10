@@ -21,6 +21,7 @@ import mygram from "./images/my-gram.png";
 import share from "./images/Share-1-web.PNG";
 import tours from "./images/myTours.PNG";
 import profile from "./images/profile.PNG";
+import jsdevtask from "./images/academic/jsdevtask.png";
 import adminPannel from "./images/academic/adminpannel.jpg";
 import sla from "./images/academic/cse299.png";
 import java from "./images/academic/cse215.png";
@@ -100,6 +101,28 @@ const Project = [
       "React-Hooks",
       "node-Sass",
       "SCSS"
+    ]
+  },
+  {
+    title: "Complete Fullstack Dev MERN (Task)",
+    projectType: "frontend",
+    description:
+      "A Complete Full stack Application with MERN Stack. Validation in both frontend (React), and Backend (nodeJS). (Done as Task)",
+    imageUrl: jsdevtask,
+    projectUrl:
+      "https://zealous-johnson-d21e2d.netlify.app/",
+    code: "https://github.com/Priom7/MERN-Full-Stack-",
+    details: [
+      "React JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "flex-box",
+      "React-Hooks",
+      "Full Stack MERN TASKS Frontend Hosted on Netlify - https://zealous-johnson-d21e2d.netlify.app/ Backend Hosted on Heroku - https://priom-mern2.herokuapp.com/api/places",
+      "Task 1 :      Form With React JS      Input Field      Text area Field      Select drop down     Checkbox toggle    Image file upload field    Node Js server to store Data  Validate Data in Frontend REACT JS    Validate Data in Backend NODE JS",
+      "Task 2 :      Custom Table with Pagination React JS    Data Coming from node js Server      Editable Data      After Edition Synchronized with Node js Backend",
+      "Task 3 :     Drag and Drop image upload with React JS      Validate File      Validate File Size      Upload To Node JS      Show in React JS page   "
     ]
   },
   {
