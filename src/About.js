@@ -3,13 +3,22 @@ import InfoIcon from "@material-ui/icons/Info";
 import CastForEducationIcon from "@material-ui/icons/CastForEducation";
 import CodeIcon from "@material-ui/icons/Code";
 import TimerIcon from "@material-ui/icons/Timer";
+import Avatar from "@material-ui/core/Avatar";
 import WorkIcon from "@material-ui/icons/Work";
 import AccessibilityNewIcon from "@material-ui/icons/AccessibilityNew";
 import Button from "@material-ui/core/Button";
 import SaveIcon from "@material-ui/icons/Save";
+import milil from "./images/milil (1).jpeg";
+import nsu from "./images/nsu.png";
+import uhsc from "./images/uhsc.png";
+import bncc from "./images/bncc.jpeg";
+import scout from "./images/sccout.png";
+import tpsgc from "./images/tpsgc.jpeg";
+import lict from "./images/lict.jpg";
+import gdg from "./images/gdg2.png";
 import "./About.css";
 
-const About = (props) => {
+const About = props => {
   return (
     <div className='about'>
       <a
@@ -27,7 +36,7 @@ const About = (props) => {
             margin: "10px",
             width: "300px",
             alignSelf: "center",
-            color: "wheat",
+            color: "wheat"
           }}
         >
           Download CV
@@ -82,6 +91,10 @@ const About = (props) => {
         </h1>
         <div className='about__educationItem'>
           <div className='about__educationItem1'>
+            <Avatar
+              style={{ background: "white" }}
+              src={nsu}
+            ></Avatar>
             <div className='about_educationPeriod'>
               <TimerIcon className='about__icons'>
                 {" "}
@@ -114,6 +127,10 @@ const About = (props) => {
             </div>
           </div>
           <div className='about__educationItem2'>
+            <Avatar
+              style={{ background: "white" }}
+              src={uhsc}
+            ></Avatar>
             <div className='about_educationPeriod'>
               <TimerIcon className='about__icons'>
                 {" "}
@@ -135,6 +152,10 @@ const About = (props) => {
             </div>
           </div>
           <div className='about__educationItem3'>
+            <Avatar
+              style={{ background: "white" }}
+              src={tpsgc}
+            ></Avatar>
             <div className='about_educationPeriod'>
               <TimerIcon className='about__icons'>
                 {" "}
@@ -164,51 +185,74 @@ const About = (props) => {
             <WorkIcon> </WorkIcon> Work Experience
           </h1>
           <div className='about__experienceItem'>
-            <div className='about__experienceItem1'>
-              <div className='about_experiencePeriod'>
-                <TimerIcon className='about__icons'>
-                  {" "}
-                </TimerIcon>{" "}
-                2/2019 – 6/2019
+            <div className='about__experienceItem'>
+              <div className='about__experienceItem1'>
+                <Avatar src={milil}></Avatar>
+                <div className='about_experiencePeriod'>
+                  <TimerIcon className='about__icons'>
+                    {" "}
+                  </TimerIcon>{" "}
+                  9/2020 – Present
+                </div>
+                <div className='about_experienceTitle'>
+                  <span style={{ color: "#ee4540" }}>
+                    {" "}
+                    SOftware Engineer at Mercantile Islami
+                    Life Insurance Ltd.{" "}
+                  </span>
+                </div>
+                <div className='about_experienceDetails'>
+                  <p>
+                    Developing a complete online Insurance
+                    Management System (IMS) as a team member
+                    of Full Stack Software Engineers at
+                    Information Technology department.
+                  </p>
+                </div>
+                <div className='about_experienceFeatures'>
+                  <span style={{ color: "#ee4540" }}>
+                    Core Technologies -{" "}
+                  </span>{" "}
+                  PHP (Framework - Laravel),
+                  JavaScript(Framework - Vue), SQL. .
+                </div>
               </div>
-              <div className='about_experienceTitle'>
-                <span style={{ color: "#ee4540" }}>
-                  {" "}
-                  Software Engineer Intern at North South
-                  University{" "}
-                </span>
-                (2/2019 – 6/2019)
-              </div>
-              <div className='about_experienceDetails'>
-                <p>
-                  Developed an Asset Management System (Web
-                  application) for storing the stock
-                  information of the electronic
-                  assets/devices and track their fault
-                  status through reports from users.
-                </p>
-              </div>
-              <div className='about_experienceFeatures'>
-                <span style={{ color: "#ee4540" }}>
-                  Some Key Features -{" "}
-                </span>{" "}
-                Data Entry (work order, suppliers details,
-                asset details etc.), Asset Allocation
-                (allocate/deallocate to users, labs etc.),
-                Report issues (create ticket, report issues
-                on assets), Assign Task (assign reported
-                tasks to support stuff), Update working
-                status (ticket open/closed/working etc.).
-              </div>
-              <div className='about_about_experienceTools'>
-                Languages and Technology - PHP (Framework -
-                Laravel), JavaScript, HTML, CSS, MySQL,
-                Ajax, JQuery.
-              </div>
-              <div className='about_about_experienceLinks'>
-                GitHub -
-                https://github.com/Priom7/Internship.git
-              </div>
+            </div>
+          </div>
+
+          <div className='about__experienceItem1'>
+            <Avatar
+              style={{ background: "white" }}
+              src={nsu}
+            ></Avatar>
+            <div className='about_experiencePeriod'>
+              <TimerIcon className='about__icons'>
+                {" "}
+              </TimerIcon>{" "}
+              2/2019 – 6/2019
+            </div>
+            <div className='about_experienceTitle'>
+              <span style={{ color: "#ee4540" }}>
+                {" "}
+                Software Engineer Intern at North South
+                University{" "}
+              </span>
+            </div>
+            <div className='about_experienceDetails'>
+              <p>
+                Developed an Asset Management System (Web
+                application) for storing the stock
+                information of the electronic assets/devices
+                and track their fault status through reports
+                from users.
+              </p>
+            </div>
+            <div className='about_about_experienceTools'>
+              <span style={{ color: "#ee4540" }}>
+                Core Technologies -{" "}
+              </span>{" "}
+              PHP (Framework - Laravel), JavaScript, HTML,
+              CSS, MySQL, Ajax, JQuery.
             </div>
           </div>
         </div>
@@ -218,29 +262,14 @@ const About = (props) => {
             <CodeIcon> </CodeIcon> Workshops & Trainings
           </h1>
           <div className='about__trainingItem'>
-            <div className='about__trainingItem1'>
-              <div className='about_trainingPeriod'>
-                <TimerIcon className='about__icons'>
-                  {" "}
-                </TimerIcon>{" "}
-                11/2017 – 11/2017
-              </div>
-              <div className='about_trainingTitle'>
-                <span style={{ color: "#ee4540" }}>
-                  {" "}
-                  Google Developer DevFest Bangladesh 2017
-                </span>
-              </div>
-              <div className='about_trainingDetails'>
-                <p>
-                  Successfully completed the workshop on
-                  google products and Firebase technology
-                  sponsored by GDG Dhaka, Whiteboard &
-                  Preneural Lab.
-                </p>
-              </div>
-            </div>
             <div className='about__trainingItem2'>
+              <Avatar
+                style={{
+                  background: "white",
+                  objectFit: "contain"
+                }}
+                src={lict}
+              ></Avatar>
               <div className='about_trainingPeriod'>
                 <TimerIcon className='about__icons'>
                   {" "}
@@ -270,6 +299,32 @@ const About = (props) => {
               </div>
             </div>
           </div>
+          <div className='about__trainingItem1'>
+            <Avatar
+              style={{ background: "white" }}
+              src={gdg}
+            ></Avatar>
+            <div className='about_trainingPeriod'>
+              <TimerIcon className='about__icons'>
+                {" "}
+              </TimerIcon>{" "}
+              11/2017 – 11/2017
+            </div>
+            <div className='about_trainingTitle'>
+              <span style={{ color: "#ee4540" }}>
+                {" "}
+                Google Developer DevFest Bangladesh 2017
+              </span>
+            </div>
+            <div className='about_trainingDetails'>
+              <p>
+                Successfully completed the workshop on
+                google products and Firebase technology
+                sponsored by GDG Dhaka, Whiteboard &
+                Preneural Lab.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className='about_volunteering'>
@@ -278,7 +333,38 @@ const About = (props) => {
             Volunteering
           </h1>
           <div className='about_volunteeringItem'>
+            <div className='about_volunteeringItem2'>
+              <Avatar
+                style={{ background: "white" }}
+                src={bncc}
+              ></Avatar>
+              <div className='about_volunteeringPeriod'>
+                <TimerIcon className='about__icons'>
+                  {" "}
+                </TimerIcon>{" "}
+                01/2011 – 06/2013
+              </div>
+              <div className='about_volunteeringTitle'>
+                <span style={{ color: "#ee4540" }}>
+                  {" "}
+                  Bangladesh National Cadet Corps (BNCC)
+                </span>
+              </div>
+              <div className='about_volunteeringDetails'>
+                <p>
+                  Used to lead my High School BNCC platoon
+                  from the front as Platoon Leader (Cadet
+                  Corporal). Took active participation in
+                  various socio-cultural reforms, events
+                  dedicated for public/social welfare.
+                </p>
+              </div>
+            </div>
             <div className='about_volunteeringItem1'>
+              <Avatar
+                style={{ background: "white" }}
+                src={scout}
+              ></Avatar>
               <div className='about_volunteeringPeriod'>
                 <TimerIcon className='about__icons'>
                   {" "}
@@ -301,29 +387,6 @@ const About = (props) => {
                   social welfare activities like collecting
                   and distributing helps and funds for the
                   people affected by natural disasters.
-                </p>
-              </div>
-            </div>
-            <div className='about_volunteeringItem2'>
-              <div className='about_volunteeringPeriod'>
-                <TimerIcon className='about__icons'>
-                  {" "}
-                </TimerIcon>{" "}
-                01/2011 – 06/2013
-              </div>
-              <div className='about_volunteeringTitle'>
-                <span style={{ color: "#ee4540" }}>
-                  {" "}
-                  Bangladesh National Cadet Corps (BNCC)
-                </span>
-              </div>
-              <div className='about_volunteeringDetails'>
-                <p>
-                  Used to lead my High School BNCC platoon
-                  from the front as Platoon Leader (Cadet
-                  Corporal). Took active participation in
-                  various socio-cultural reforms, events
-                  dedicated for public/social welfare.
                 </p>
               </div>
             </div>

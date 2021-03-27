@@ -130,6 +130,9 @@ const Skills = props => {
             <div className='skill__detailsFramework_react'>
               React JS (Redux & Hooks)
             </div>
+            <div className='skill__detailsFramework_react'>
+              Vue JS
+            </div>
             <div className='skill__detailsFramework_laravel'>
               Laravel
             </div>
