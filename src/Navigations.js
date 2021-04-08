@@ -19,9 +19,10 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { Route } from "react-router-dom";
+import rocket from "./images/gif/space2.gif";
 import {
   makeStyles,
-  useTheme,
+  useTheme
 } from "@material-ui/core/styles";
 import Home from "./Home";
 import About from "./About";
@@ -32,29 +33,29 @@ import Contacts from "./Contacts";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    background: "#1d1e22",
+    background: "#1d1e22"
   },
   drawer: {
     [theme.breakpoints.up("sm")]: {
       width: drawerWidth,
-      flexShrink: 0,
-    },
+      flexShrink: 0
+    }
   },
   appBar: {
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-    },
+      marginLeft: drawerWidth
+    }
   },
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
       display: "none",
-      background: "#1d1e22",
-    },
+      background: "#1d1e22"
+    }
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -62,17 +63,17 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     background: "#1d1e22",
 
-    boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
+    boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)"
   },
   content: {
     flexGrow: 1,
     background: "#1D1E22",
     opacity: ".9.8",
-    zIndex: "1",
-  },
+    zIndex: "1"
+  }
 }));
 
-const Navigations = (props) => {
+const Navigations = props => {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -126,6 +127,11 @@ const Navigations = (props) => {
         </NavLink>
       </List>
       <Divider />
+      <img
+        class='rocket'
+        src={rocket}
+        style={{ height: "100px", marginbottom: "0px" }}
+      ></img>
     </div>
   );
 
@@ -156,7 +162,7 @@ const Navigations = (props) => {
             style={{
               color: "#ee4540",
 
-              marginRight: "2px",
+              marginRight: "2px"
             }}
           ></AccountCircleIcon>
           <Typography
@@ -183,10 +189,10 @@ const Navigations = (props) => {
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{
-              paper: classes.drawerPaper,
+              paper: classes.drawerPaper
             }}
             ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
+              keepMounted: true // Better open performance on mobile.
             }}
           >
             {drawer}
@@ -195,7 +201,7 @@ const Navigations = (props) => {
         <Hidden xsDown implementation='css'>
           <Drawer
             classes={{
-              paper: classes.drawerPaper,
+              paper: classes.drawerPaper
             }}
             variant='permanent'
             open

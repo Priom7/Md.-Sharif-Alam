@@ -26,3 +26,20 @@ a:active {
 .nav_image:hover {
   transform: scale(1.05);
 }
+
+.rocket {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: relative;
+  animation: myfirst 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: transparent; left: 0px; top: 0px;}
+  25%  {background: transparent; left: 100px; top: 0px;}
+  50%  {background: transparent; left: 100px; top: 100px;}
+  75%  {background: transparent; left: 0px; top: 100px;}
+  100% {background: transparent; left: 0px; top: 0px;}
+}

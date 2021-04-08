@@ -1,10 +1,12 @@
 import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import space from "./images/gif/space.gif";
+
 import "./Home.css";
 import BackGround from "./BackGround";
 
-const Home = (props) => {
+const Home = props => {
   return (
     <div className='home'>
       <div className='home__item'>
@@ -18,6 +20,7 @@ const Home = (props) => {
           Software Engineer / Full-Stack Multi Platform
           Software Developer.{" "}
         </p>
+        <img style={{ height: "100px" }} src={space}></img>
         <div className='home__icons'>
           <p>
             <span>

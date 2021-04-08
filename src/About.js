@@ -16,6 +16,7 @@ import scout from "./images/sccout.png";
 import tpsgc from "./images/tpsgc.jpeg";
 import lict from "./images/lict.jpg";
 import gdg from "./images/gdg2.png";
+import space2 from "./images/gif/space4.gif";
 import "./About.css";
 
 const About = props => {
@@ -25,7 +26,7 @@ const About = props => {
         style={{ alignSelf: "center" }}
         href='https://drive.google.com/file/d/1KyWaHRVpExGrP4r0WMnmtuOb7Uw9thGh/view?usp=sharing'
       >
-        {" "}
+        <img style={{ height: "100px" }} src={space2}></img>{" "}
         <Button
           variant='contained'
           color='primary'
