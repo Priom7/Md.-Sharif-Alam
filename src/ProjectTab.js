@@ -14,6 +14,9 @@ import Box from "@material-ui/core/Box";
 import ProjectList from "./ProjectList";
 import myFlix from "./images/my-flix-web.PNG";
 import myBrand from "./images/academic/my-brand.jpg";
+import sibl from "./images/sibl.png";
+import cbm from "./images/cbm.png";
+import milil from "./images/milil (1).jpeg";
 import amazon from "./images/ecommerce2.PNG";
 import covid from "./images/covid.PNG";
 import weather from "./images/weather-phone.PNG";
@@ -38,6 +41,42 @@ import AcademicProjectList from "./AcademicProjectList";
 import FunProjectList from "./FunProjectList";
 
 const Project = [
+  {
+    title:
+      "Mercantile Islami Life Insurance Limited (MILIL) (Ongoing)",
+    projectType: "frontend",
+    description:
+      "A complete Insurance Management System. Company Profile : https://www.milil.com.bd/ ",
+    imageUrl: milil,
+    projectUrl: "https://www.milil.com.bd/",
+    code: "",
+    details: []
+  },
+
+  {
+    title:
+      "Chittagong Builders & Machinery ltd (CBM) (Ongoing)",
+    projectType: "frontend",
+    description:
+      "Contributing in Management Information System (MIS) development. Company Profile : https://cbmbd.com/",
+    imageUrl: cbm,
+    projectUrl: "https://cbmbd.com/",
+    code: "",
+    details: []
+  },
+
+  {
+    title:
+      "SIBL Foundation Hospital & Diagnostic Center (SIBLFH) (Ongoing)",
+    projectType: "frontend",
+    description:
+      "Contributing in Hospital Management System development. ",
+    imageUrl: sibl,
+    projectUrl:
+      "https://www.doctor360.com.bd/general-hospitals/dhaka-district-dhaka-1215/sibl-foundation-hospital-and-diagnostic-centerdhaka-general-hospitals",
+    code: "",
+    details: []
+  },
   {
     title: "Online Super Shop (Highly Scalable)",
     projectType: "frontend",

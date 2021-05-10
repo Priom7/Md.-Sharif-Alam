@@ -198,7 +198,7 @@ const About = props => {
                 <div className='about_experienceTitle'>
                   <span style={{ color: "#ee4540" }}>
                     {" "}
-                    SOftware Engineer at Mercantile Islami
+                    Software Engineer at Mercantile Islami
                     Life Insurance Ltd.{" "}
                   </span>
                 </div>

@@ -20,6 +20,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { Route } from "react-router-dom";
 import rocket from "./images/gif/space2.gif";
+import imageback from "./images/gif/space-back.png";
 import {
   makeStyles,
   useTheme
@@ -127,6 +128,7 @@ const Navigations = props => {
         </NavLink>
       </List>
       <Divider />
+      {/* <img className='nav_image' src={imageback}></img> */}
       <img
         class='rocket'
         src={rocket}
