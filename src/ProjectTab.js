@@ -4,7 +4,7 @@ import SwipeableViews from "react-swipeable-views";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import {
   makeStyles,
-  useTheme
+  useTheme,
 } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
@@ -50,7 +50,7 @@ const Project = [
     imageUrl: milil,
     projectUrl: "https://www.milil.com.bd/",
     code: "",
-    details: []
+    details: [],
   },
 
   {
@@ -62,21 +62,21 @@ const Project = [
     imageUrl: cbm,
     projectUrl: "https://cbmbd.com/",
     code: "",
-    details: []
+    details: [],
   },
 
-  {
-    title:
-      "SIBL Foundation Hospital & Diagnostic Center (SIBLFH) (Ongoing)",
-    projectType: "frontend",
-    description:
-      "Contributing in Hospital Management System development. ",
-    imageUrl: sibl,
-    projectUrl:
-      "https://www.doctor360.com.bd/general-hospitals/dhaka-district-dhaka-1215/sibl-foundation-hospital-and-diagnostic-centerdhaka-general-hospitals",
-    code: "",
-    details: []
-  },
+  // {
+  //   title:
+  //     "SIBL Foundation Hospital & Diagnostic Center (SIBLFH) (Ongoing)",
+  //   projectType: "frontend",
+  //   description:
+  //     "Contributing in Hospital Management System development. ",
+  //   imageUrl: sibl,
+  //   projectUrl:
+  //     "https://www.doctor360.com.bd/general-hospitals/dhaka-district-dhaka-1215/sibl-foundation-hospital-and-diagnostic-centerdhaka-general-hospitals",
+  //   code: "",
+  //   details: []
+  // },
   {
     title: "Online Super Shop (Highly Scalable)",
     projectType: "frontend",
@@ -97,8 +97,8 @@ const Project = [
       "flex-box",
       "React-Hooks",
       "node-Sass",
-      "SCSS"
-    ]
+      "SCSS",
+    ],
   },
   {
     title: "Chat Room",
@@ -116,8 +116,8 @@ const Project = [
       "material-ui",
       "firebase-auth",
       "firestore-database",
-      "flex-box"
-    ]
+      "flex-box",
+    ],
   },
   {
     title: "Basic Admin Task (React & Redux)",
@@ -139,8 +139,8 @@ const Project = [
       "flex-box",
       "React-Hooks",
       "node-Sass",
-      "SCSS"
-    ]
+      "SCSS",
+    ],
   },
   {
     title: "Complete Fullstack Dev MERN (Task)",
@@ -161,8 +161,8 @@ const Project = [
       "Full Stack MERN TASKS Frontend Hosted on Netlify - https://zealous-johnson-d21e2d.netlify.app/ Backend Hosted on Heroku - https://priom-mern2.herokuapp.com/api/places",
       "Task 1 :      Form With React JS      Input Field      Text area Field      Select drop down     Checkbox toggle    Image file upload field    Node Js server to store Data  Validate Data in Frontend REACT JS    Validate Data in Backend NODE JS",
       "Task 2 :      Custom Table with Pagination React JS    Data Coming from node js Server      Editable Data      After Edition Synchronized with Node js Backend",
-      "Task 3 :     Drag and Drop image upload with React JS      Validate File      Validate File Size      Upload To Node JS      Show in React JS page   "
-    ]
+      "Task 3 :     Drag and Drop image upload with React JS      Validate File      Validate File Size      Upload To Node JS      Show in React JS page   ",
+    ],
   },
   {
     title: "My Movies",
@@ -181,8 +181,8 @@ const Project = [
       "react-youtube",
       "firebase-hosting",
       "flex-box",
-      "axios"
-    ]
+      "axios",
+    ],
   },
   {
     title: "Click and Share (Full Stack)",
@@ -199,8 +199,8 @@ const Project = [
       "firebase-auth",
       "firestore-database",
       "firebase-hosting",
-      "flex-box"
-    ]
+      "flex-box",
+    ],
   },
   {
     title: "Ecommerce Application",
@@ -217,8 +217,8 @@ const Project = [
       "redux-store",
       "netlify-deployment",
       "firebase-auth",
-      "flex-box"
-    ]
+      "flex-box",
+    ],
   },
   {
     title: "My Tours (Full Stack MERN)",
@@ -238,8 +238,8 @@ const Project = [
       "json-webtoken",
       "multer",
       "firebase-deployment (frontend)",
-      "heroku-deployment (backend)"
-    ]
+      "heroku-deployment (backend)",
+    ],
   },
   {
     title: "Covid-19 Info.",
@@ -258,8 +258,8 @@ const Project = [
       "chart-js",
       "react-countUp",
       "flex-box",
-      "axios"
-    ]
+      "axios",
+    ],
   },
   {
     title: "City Weather Info",
@@ -274,8 +274,8 @@ const Project = [
       "React JS",
       "Openweathermap-api",
       "flex-box",
-      "axios"
-    ]
+      "axios",
+    ],
   },
 
   {
@@ -292,8 +292,8 @@ const Project = [
       "firebase-authentication",
       "firestore-database",
       "material-ui",
-      "firebase-hosting"
-    ]
+      "firebase-hosting",
+    ],
   },
   {
     title: "3D Printer For Industrial Usage (CSE 499)",
@@ -309,8 +309,8 @@ const Project = [
       "Arduino Mega",
       "RAMPS",
       "Marlin Firmware",
-      "Check attached documents for more."
-    ]
+      "Check attached documents for more.",
+    ],
   },
   {
     title: "Software Engineer Intern (CSE 498)",
@@ -330,8 +330,8 @@ const Project = [
       "HTML",
       "CSS",
       "Jquery",
-      "AJAX"
-    ]
+      "AJAX",
+    ],
   },
   {
     title:
@@ -350,8 +350,8 @@ const Project = [
       "Java",
       "Flex Sensors",
       "Gyroscope sensor",
-      "Bluetooth"
-    ]
+      "Bluetooth",
+    ],
   },
   {
     title:
@@ -363,7 +363,7 @@ const Project = [
     projectUrl: "https://www.youtube.com/embed/OXSLNfYBeBc",
     code:
       "https://github.com/Priom7/CSE-327-Recognizing-Text-and-Translate-from-Image-",
-    details: ["Android Studio", "OpenCV", "Yandex API"]
+    details: ["Android Studio", "OpenCV", "Yandex API"],
   },
   {
     title: "Android Controlled Robot (CSE 323)",
@@ -378,8 +378,8 @@ const Project = [
     details: [
       "MIT App Inventor",
       "Arduino Microprocessor",
-      "Bluetooth"
-    ]
+      "Bluetooth",
+    ],
   },
   {
     title: "Sequential Logic Design (DLD) (CSE 231)",
@@ -389,7 +389,7 @@ const Project = [
     imageUrl: dld,
     projectUrl: "https://www.youtube.com/embed/W67eyAkgPiQ",
     code: "https://www.youtube.com/embed/W67eyAkgPiQ",
-    details: ["7-Segment LED", "Registers", "Capacitors"]
+    details: ["7-Segment LED", "Registers", "Capacitors"],
   },
   {
     title: "Tutor Finder (CSE 311)",
@@ -405,8 +405,8 @@ const Project = [
       "MySQL",
       "Relational Database",
       "HTML",
-      "CSS"
-    ]
+      "CSS",
+    ],
   },
   {
     title: "Restaurant Management System Java (CSE 215)",
@@ -416,7 +416,7 @@ const Project = [
     imageUrl: java,
     projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
     code: "https://github.com/Priom7/CSE-215-Java-Project-",
-    details: ["Java", "NetBeans"]
+    details: ["Java", "NetBeans"],
   },
   {
     title: "Restaurant Management System Java (CSE 215)",
@@ -426,8 +426,8 @@ const Project = [
     imageUrl: java,
     projectUrl: "https://www.youtube.com/embed/mGbGX4dQSwo",
     code: "https://github.com/Priom7/CSE-215-Java-Project-",
-    details: ["Java", "NetBeans"]
-  }
+    details: ["Java", "NetBeans"],
+  },
 ];
 
 function TabPanel(props) {
@@ -453,20 +453,20 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
+  value: PropTypes.any.isRequired,
 };
 
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
-    "aria-controls": `full-width-tabpanel-${index}`
+    "aria-controls": `full-width-tabpanel-${index}`,
   };
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#1d1e22"
-  }
+    backgroundColor: "#1d1e22",
+  },
 }));
 
 export default function ProjectTab() {
@@ -478,7 +478,7 @@ export default function ProjectTab() {
     setValue(newValue);
   };
 
-  const handleChangeIndex = index => {
+  const handleChangeIndex = (index) => {
     setValue(index);
   };
 
