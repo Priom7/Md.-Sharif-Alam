@@ -19,12 +19,12 @@ import gdg from "./images/gdg2.png";
 import space2 from "./images/gif/space4.gif";
 import "./About.css";
 
-const About = props => {
+const About = (props) => {
   return (
     <div className='about'>
       <a
         style={{ alignSelf: "center" }}
-        href='https://drive.google.com/file/d/1KyWaHRVpExGrP4r0WMnmtuOb7Uw9thGh/view?usp=sharing'
+        href='https://docs.google.com/document/d/1ZdsyXW69N45soBMAyVRMkjh5l9t9DsxynMye27iAEU4/edit?usp=sharing'
       >
         <img style={{ height: "100px" }} src={space2}></img>{" "}
         <Button
@@ -37,7 +37,7 @@ const About = props => {
             margin: "10px",
             width: "300px",
             alignSelf: "center",
-            color: "wheat"
+            color: "wheat",
           }}
         >
           Download CV
@@ -267,7 +267,7 @@ const About = props => {
               <Avatar
                 style={{
                   background: "white",
-                  objectFit: "contain"
+                  objectFit: "contain",
                 }}
                 src={lict}
               ></Avatar>
