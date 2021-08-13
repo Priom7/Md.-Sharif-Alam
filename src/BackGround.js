@@ -13,7 +13,7 @@ import img10 from "./images/react.png";
 import img11 from "./images/schema.png";
 import img12 from "./images/java.png";
 
-const BackGround = props => {
+const BackGround = (props) => {
   return (
     <div>
       <Sky
@@ -29,7 +29,7 @@ const BackGround = props => {
           8: img9,
           9: img10,
           10: img11,
-          11: img12
+          11: img12,
         }}
         how={
           50

@@ -6,7 +6,7 @@ import space from "./images/gif/space.gif";
 import "./Home.css";
 import BackGround from "./BackGround";
 
-const Home = props => {
+const Home = (props) => {
   return (
     <div className='home'>
       <div className='home__item'>
