@@ -75,7 +75,7 @@ const Skills = props => {
               php
             </div>
             <div className='skill__detailsLanguages_c'>
-              C
+              C#
             </div>
           </div>
 
@@ -115,6 +115,21 @@ const Skills = props => {
             </div>
             <div className='skill__detailsLanguages_android'>
               Android
+            </div>
+            <div className='skill__detailsOsHeader'>
+              <span style={{ color: "#ee4540" }}>
+                <AndroidIcon className='skill__icons'></AndroidIcon>{" "}
+                Prototyping & Documentation Tools
+              </span>
+            </div>
+            <div className='skill__detailsLanguages_windows'>
+              Axure RP
+            </div>
+            <div className='skill__detailsLanguages_windows'>
+              DB Designer
+            </div>
+            <div className='skill__detailsLanguages_windows'>
+            LucidChart
             </div>
           </div>
           <div className='skill__detailsFramework'>
@@ -178,6 +193,7 @@ const Skills = props => {
             <div className='skill__others2'>GitHub</div>
             <div className='skill__others3'>Git</div>
             <div className='skill__others4'>BitBucket</div>
+            <div className='skill__others4'>Docker</div>
           </div>
         </div>
       </div>
