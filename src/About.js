@@ -120,7 +120,7 @@ const About = (props) => {
             </div>
             <div className="about_educationUVLocation">
               <span style={{ color: "#ee4540" }}>University of Greenwich</span>,
-              London, UK.
+              London, UK. 🇬🇧
             </div>
             <div className="about_educationDegreeFocus">
               Focus:
@@ -129,9 +129,9 @@ const About = (props) => {
                 Web Engineering · Project Management · IT Strategy · User Experience (UX) · User-centered Design · Mobile Application Development
               </span>
             </div>
-            <div className="about_educationDegreeMedium">
+            {/* <div className="about_educationDegreeMedium">
               Medium of Instruction: English
-            </div>
+            </div> */}
           </div>
 
 
@@ -149,7 +149,7 @@ const About = (props) => {
             </div>
             <div className="about_educationUVLocation">
               <span style={{ color: "#ee4540" }}>North South University</span>,
-              Bashundhara, Dhaka.
+              Bashundhara, Dhaka. 🇧🇩
             </div>
             <div className="about_educationDegreeFocus">
               Focus:
@@ -158,11 +158,11 @@ const About = (props) => {
                 Software Engineering and Networking.
               </span>
             </div>
-            <div className="about_educationDegreeMedium">
+            {/* <div className="about_educationDegreeMedium">
               Medium of Instruction: English
-            </div>
+            </div> */}
           </div>
-          <div className="about__educationItem2">
+          {/* <div className="about__educationItem2">
             <Avatar style={{ background: "white" }} src={uhsc}></Avatar>
             <div className="about_educationPeriod">
               <TimerIcon className="about__icons"> </TimerIcon> 04/2013 –
@@ -179,8 +179,8 @@ const About = (props) => {
             <div className="about_educationDegreeMedium">
               Medium of Instruction: Bengali
             </div>
-          </div>
-          <div className="about__educationItem3">
+          </div> */}
+          {/* <div className="about__educationItem3">
             <Avatar style={{ background: "white" }} src={tpsgc}></Avatar>
             <div className="about_educationPeriod">
               <TimerIcon className="about__icons"> </TimerIcon> 01/2011 –
@@ -197,7 +197,7 @@ const About = (props) => {
             <div className="about_educationDegreeMedium">
               Medium of Instruction: Bengali
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="about_items">
