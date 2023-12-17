@@ -36,11 +36,98 @@ import rover from "./images/academic/cse323.jpg";
 import intern from "./images/academic/cse498.PNG";
 import construction from "./images/construction.png";
 import chatroom from "./images/academic/chat-room.png";
+import yoga from "./images/academic/yogaAll.png";
+import londonmusicals from "./images/academic/londonmusicals.png";
+import musicprototype from "./images/academic/musicprototype.png";
+import openai from "./images/academic/openai.png";
 import "./ProjectTab.css";
 import AcademicProjectList from "./AcademicProjectList";
 import FunProjectList from "./FunProjectList";
 
 const Project = [
+  {
+    title:
+      "Open AI Based Automation System (Web App)",
+    projectType: "frontend",
+    description:
+      "Laravel, Open AI, ReactJS and MySQL. More Details Coming Soon.",
+    imageUrl: openai,
+    projectUrl: "",
+    code: "",
+    details: [
+      "Laravel",
+      "React JS",
+      "MySQL",
+      "JWT",
+      "React Hooks",
+      "Redux",
+      "Redux-Thunk",
+      "Redux-Logger",
+      "Axios",
+      "Material UI",
+      "SCSS",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "PHP",
+      "REST API",
+      "Github",
+    ],
+  },
+  {
+    title:
+      "Universal Yoga (Mobile App)",
+    projectType: "frontend",
+    description:
+      "Universal Yoga Application with Firebase Firestore. Android Application for Admin Panel to add yoga classes and Schedules. Hybrid Application for users to book classes. Check Gihub for Android App and Hybrid App Codebase. Live Prototype Design: https://b7s0oa.axshare.com",
+    imageUrl: yoga,
+    projectUrl: "https://b7s0oa.axshare.com",
+    code: "https://github.com/Priom7/Yoga-App",
+    details: [
+      "Java",
+      "Android Studio",
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Firestore",
+      "Firebase Auth",
+      "Firebase Storage",
+    ],
+  },
+  {
+    title:
+      "London Musicals (Desktop App)",
+    projectType: "frontend",
+    description:
+      "London Musicals Desktop Application with Java Swing. Users can book, browse and download tickets for musicals. Admin can add musicals and schedules. Check Gihub for Codebase.",
+    imageUrl: londonmusicals,
+    projectUrl: "",
+    code: "",
+    details: [
+      "Java",
+      "Java Swing",
+      "Netbeans",
+      "MySQL",
+      "JUnit",
+    ],
+  },
+  {
+    title:
+      "My Music (Prototype Design)",
+    projectType: "frontend",
+    description:
+      "My Music Streamimg and Sharing Application Prototype Design with Axure RP . Live Prototype Design: https://b7s0oa.axshare.com",
+    imageUrl: musicprototype,
+    projectUrl: "https://l32mq1.axshare.com/",
+    code: "https://l32mq1.axshare.com/?g=14",
+    details: [
+      "Java",
+      "Java Swing",
+      "Netbeans",
+      "MySQL",
+      "JUnit",
+    ],
+  },
   {
     title:
       "Mercantile Islami Life Insurance Limited (MILIL) (Ongoing)",
