@@ -18,6 +18,7 @@ import lict from "./images/lict.jpg";
 import gdg from "./images/gdg2.png";
 import space2 from "./images/gif/space4.gif";
 import gre from "./images/gre2.png";
+import pen from "./images/academic/pen.jpeg";
 import "./About.css";
 
 const About = (props) => {
@@ -103,12 +104,11 @@ const About = (props) => {
           <CastForEducationIcon> </CastForEducationIcon> Education
         </h1>
         <div className="about__educationItem">
-
-
-
-
-        <div className="about__educationItem1">
-            <Avatar style={{ background: "white", objectFit:"contain" }} src={gre}></Avatar>
+          <div className="about__educationItem1">
+            <Avatar
+              style={{ background: "white", objectFit: "contain" }}
+              src={gre}
+            ></Avatar>
             <div className="about_educationPeriod">
               <TimerIcon className="about__icons"> </TimerIcon> 01/2023 –
               01/2024
@@ -126,15 +126,15 @@ const About = (props) => {
               Focus:
               <span style={{ color: "#ee4540" }}>
                 {" "}
-                Web Engineering · Project Management · IT Strategy · User Experience (UX) · User-centered Design · Mobile Application Development
+                Web Engineering · Project Management · IT Strategy · User
+                Experience (UX) · User-centered Design · Mobile Application
+                Development
               </span>
             </div>
             {/* <div className="about_educationDegreeMedium">
               Medium of Instruction: English
             </div> */}
           </div>
-
-
 
           <div className="about__educationItem1">
             <Avatar style={{ background: "white" }} src={nsu}></Avatar>
@@ -208,10 +208,35 @@ const About = (props) => {
           <div className="about__experienceItem">
             <div className="about__experienceItem">
               <div className="about__experienceItem1">
+                <Avatar style={{ background: "white" }} src={pen}></Avatar>
+                <div className="about_experiencePeriod">
+                  <TimerIcon className="about__icons"> </TimerIcon> 2/2024 –
+                  Present
+                </div>
+                <div className="about_experienceTitle">
+                  <span style={{ color: "#ee4540" }}>
+                    {" "}
+                    Software Developer at Planet Education Network, UK{" "}
+                  </span>
+                </div>
+                <div className="about_experienceDetails">
+                  <p>
+                    Developing EdTech ERP solutions (Student Information
+                    Management System | SIMS, University Admission Portal | UAP
+                    etc.).
+                  </p>
+                </div>
+                <div className="about_about_experienceTools">
+                  <span style={{ color: "#ee4540" }}>Core Technologies - </span>{" "}
+                  PHP (Framework - Laravel), JavaScript, MySQL, AWS, React.
+                </div>
+              </div>
+
+              <div className="about__experienceItem1">
                 <Avatar src={milil}></Avatar>
                 <div className="about_experiencePeriod">
                   <TimerIcon className="about__icons"> </TimerIcon> 9/2020 –
-                  Present
+                  11/2022
                 </div>
                 <div className="about_experienceTitle">
                   <span style={{ color: "#ee4540" }}>
