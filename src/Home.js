@@ -13,27 +13,33 @@ import ProjectTab from "./ProjectTab";
 const Home = (props) => {
   return (
     <>
-      <div className="home">
+      <div
+        className="home"
+        style={{ textAlign: "center", justifyContent: "center" }}
+      >
         <div className="home__item">
           <h1>
-            Hi, I am <span className="home__name">Md. Sharif Alam </span>
+            Hi, I am <span className="home__name">Md. Sharif Alam </span> 👋
           </h1>
-          <p>
-            Software Engineer / Full-Stack Multi Platform Software Developer.{" "}
+          <p className="text-center">
+            Fullstack Software Engineer 💻 <br></br> Crafting intuitive UIs 🎨{" "}
+            <br></br> Seamless UX 🧩 <br></br>
+            Robust backends 🔧 <br></br> Reliable DevOps pipelines 🚀 <br></br>{" "}
+            for a cohesive digital experience.{" "}
           </p>
-          <img style={{ height: "100px" }} src={space}></img>
+          <img style={{ height: "100px" }} src={space} alt="space"></img>
           <div className="home__icons">
             <p>
               <span>
                 {" "}
                 <a href="https://www.linkedin.com/in/md-sharif-alam/">
-                  <LinkedInIcon></LinkedInIcon>
+                  <LinkedInIcon></LinkedInIcon> 
                 </a>
               </span>
               <span>
                 {" "}
                 <a href="https://github.com/Priom7">
-                  <GitHubIcon></GitHubIcon>
+                  <GitHubIcon></GitHubIcon> 
                 </a>
               </span>
             </p>

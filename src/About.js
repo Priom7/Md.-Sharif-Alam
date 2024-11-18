@@ -85,16 +85,15 @@ const About = (props) => {
           <span style={{ color: "#ee4540" }}>Updated</span>{" "}
           with the newest technologies and the tools
           available. */}
-          Hi, I am Sharif. Full Stack Multi-Platform Software Engineer. I have
-          experience working in many fields for the last 4 years out of
-          curiosity, eager to learn and explore more. Android Application
-          Development (Java, React Native), Game Development (Unity 3D, C#),
-          Animation/3D modeling (Blender 3D), Web Application Development(MERN
-          Stack, Laravel+SQL+Vue and ASP.NET MVC).
-          <br></br> Successfully designed and developed software solutions with
-          many unique features that are currently serving people in the
-          industries like Insurance, hospitals, Importer Exporter Companies, and
-          Educational institutions.
+          Experienced professional with 6+ years of extensive expertise in
+          FinTech and EdTech sectors. Proficient in navigating raw brownfield
+          legacy software and seamlessly migrating outdated systems to modern
+          technologies and frameworks. Demonstrated success in end-to-end
+          project management, ensuring scalability, maintainability, and robust
+          business logic implementation. Recognized for leadership capabilities
+          in fostering cohesive teams and driving projects to success. Skilled
+          in acquisition, technical inspection, and meticulous system
+          evaluation.
           <br></br> Filed of Interests: Software Development, System
           Design/Architect, Testing, IoT, Robotics/AI.
         </p>
