@@ -26,7 +26,7 @@ const About = (props) => {
     <div className="about">
       <a
         style={{ alignSelf: "center" }}
-        href="https://docs.google.com/document/d/1ZdsyXW69N45soBMAyVRMkjh5l9t9DsxynMye27iAEU4/edit?usp=sharing"
+        href="https://www.linkedin.com/in/md-sharif-alam/"
       >
         <img style={{ height: "100px" }} src={space2}></img>{" "}
         <Button
@@ -85,7 +85,7 @@ const About = (props) => {
           <span style={{ color: "#ee4540" }}>Updated</span>{" "}
           with the newest technologies and the tools
           available. */}
-          Experienced professional with 6+ years of extensive expertise in
+          Experienced professional with over 7 years of extensive expertise in
           FinTech and EdTech sectors. Proficient in navigating raw brownfield
           legacy software and seamlessly migrating outdated systems to modern
           technologies and frameworks. Demonstrated success in end-to-end
@@ -93,7 +93,8 @@ const About = (props) => {
           business logic implementation. Recognized for leadership capabilities
           in fostering cohesive teams and driving projects to success. Skilled
           in acquisition, technical inspection, and meticulous system
-          evaluation.
+          evaluation. Actively seeking dynamic roles to leverage comprehensive
+          skill sets in a growth-oriented environment.
           <br></br> Filed of Interests: Software Development, System
           Design/Architect, Testing, IoT, Robotics/AI.
         </p>

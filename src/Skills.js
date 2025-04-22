@@ -8,6 +8,7 @@ import PanToolIcon from "@material-ui/icons/PanTool";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import ListIcon from "@material-ui/icons/List";
 import CodeIcon from "@material-ui/icons/Code";
+import CodeTwoToneIcon from "@material-ui/icons/CodeTwoTone";
 import "./Skills.css";
 import SkillImageBanner from "./SkillImageBanner";
 
@@ -22,7 +23,7 @@ const Skills = (props) => {
         <p className="skill__summary">
           🌟 <strong>Planet Education Networks</strong> - Software Developer -
           Team Lead (Full-time) <br />
-          📅 <strong>Feb 2024 - Present</strong>  <br />
+          📅 <strong>Feb 2024 - Present</strong> <br />
           📍 <strong>London, England, United Kingdom</strong> · On-site <br />
           <br />
           🚀 <strong>Key Achievements:</strong>
@@ -33,6 +34,11 @@ const Skills = (props) => {
               reached up to 100,000 active students and processing more than
               10,000 applicants per intake. Optimized system and scaled
               infrastructure to support increased loads and traffic.
+            </li>
+            <li>
+              🤖 Built a complete RAG system for IT administration and Heigher
+              Management with OpenAI Integration. Reduced system redundancy,
+              improving overall efficiency by 80%.
             </li>
             <li>
               👥 Led cross-functional teams, encompassing coding, recruitment,
@@ -92,6 +98,8 @@ const Skills = (props) => {
             <div className="skill__detailsLanguages_java">Java</div>
             <div className="skill__detailsLanguages_php">php</div>
             <div className="skill__detailsLanguages_c">C#</div>
+            <div className="skill__detailsLanguages_html">Python</div>
+            <div className="skill__detailsLanguages_css">TypeScript</div>
           </div>
 
           <div className="skill__detailsDatabase">
@@ -172,6 +180,21 @@ const Skills = (props) => {
             <div className="skill__others3">Git</div>
             <div className="skill__others4">BitBucket</div>
             <div className="skill__others4">Docker</div>
+          </div>
+
+          <div className="skill__detailsVersion">
+            <div className="skill__others1">
+              <span style={{ color: "#ee4540" }}>
+                <CodeTwoToneIcon className="skill__icons"></CodeTwoToneIcon> New AI/LLM/ML
+                Control
+              </span>
+            </div>
+            <div className="skill__others2">OpenAI</div>
+            <div className="skill__others3">Ollama</div>
+            <div className="skill__others4">Langchain</div>
+            <div className="skill__others4">HuggingFace</div>
+            <div className="skill__others4">Custom RAG</div>
+            <div className="skill__others4">AI/LLM Integration</div>
           </div>
         </div>
       </div>

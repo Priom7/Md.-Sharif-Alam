@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import {
-  makeStyles,
-  useTheme,
-} from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -36,6 +33,7 @@ import rover from "./images/academic/cse323.jpg";
 import intern from "./images/academic/cse498.PNG";
 import construction from "./images/construction.png";
 import chatroom from "./images/academic/chat-room.png";
+import cwd1 from "./images/cwd1.png";
 import yoga from "./images/academic/yogaAll.png";
 import londonmusicals from "./images/academic/londonmusicals.png";
 import musicprototype from "./images/academic/musicprototype.png";
@@ -43,17 +41,64 @@ import openai from "./images/academic/openai.png";
 import "./ProjectTab.css";
 import AcademicProjectList from "./AcademicProjectList";
 import FunProjectList from "./FunProjectList";
+import genapi from "./images/genapi.png";
 
 const Project = [
   {
-    title:
-      "Open AI Based Automation System (Web App)",
+    title: "Chat With Data (Custom RAG - GPT-4)",
     projectType: "frontend",
     description:
-      "Laravel, Open AI, ReactJS and MySQL. More Details Coming Soon.",
+      "Fine-tuned system to chat with both structured and unstructured data. Convert natural language into SQL queries seamlessly.",
+    imageUrl: cwd1,
+    projectUrl: "https://chat-w-data.netlify.app/",
+    code: "https://medium.com/towardsdev/building-an-ai-powered-sql-query-system-for-large-scale-databases-fe3bf6e624cb",
+    details: [
+      "OpenAI",
+      "GPT-4",
+      "NodeJS",
+      "React JS",
+      "MySQL",
+      "JWT",
+      "React Hooks",
+      "Redux",
+      "Redux-Thunk",
+      "Redux-Logger",
+      "Axios",
+      "Material UI",
+      "SCSS",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "PHP",
+      "REST API",
+      "Github",
+    ],
+  },
+  {
+    title: "Gen API (Migrate Legacy DB to Laravel API in Seconds!!!)",
+    projectType: "frontend",
+    description:
+      "Automate Your Laravel API Development. Transform your database schema into a production-ready Laravel API with a single command. Save hours of development time with our powerful Node.js CLI tool.",
+    imageUrl: genapi,
+    projectUrl: "https://genapi.netlify.app/",
+    code: "https://medium.com/towardsdev/instantly-generate-laravel-apis-from-your-database-schema-a-powerful-cli-tool-dcae914b3f24",
+    details: [
+      "Shell Scripting",
+      "Node JS",
+      "React JS",
+      "MySQL",
+      "Javascript",
+      "Github",
+    ],
+  },
+  {
+    title: "ITWA-AI (Open AI Based Automation System)",
+    projectType: "frontend",
+    description:
+      "The AI-powered IT Asset Management System revolutionizes how organizations handle IT assets, providing a smart, efficient, and automated solution. By leveraging AI to enhance workflows and decision-making, this system ensures better asset utilization, reduces downtime, and improves overall operational efficiency.",
     imageUrl: openai,
-    projectUrl: "",
-    code: "",
+    projectUrl: "https://medium.com/@priom7197/it-workflow-automation-transforming-it-asset-management-with-ai-integration-itwa-ai-973761b4e283",
+    code: "https://medium.com/@priom7197/it-workflow-automation-transforming-it-asset-management-with-ai-integration-itwa-ai-973761b4e283",
     details: [
       "Laravel",
       "React JS",
@@ -75,8 +120,7 @@ const Project = [
     ],
   },
   {
-    title:
-      "Universal Yoga (Mobile App)",
+    title: "Universal Yoga (Mobile App)",
     projectType: "frontend",
     description:
       "Universal Yoga Application with Firebase Firestore. Android Application for Admin Panel to add yoga classes and Schedules. Hybrid Application for users to book classes. Check Gihub for Android App and Hybrid App Codebase. Live Prototype Design: https://b7s0oa.axshare.com",
@@ -95,42 +139,27 @@ const Project = [
     ],
   },
   {
-    title:
-      "London Musicals (Desktop App)",
+    title: "London Musicals (Desktop App)",
     projectType: "frontend",
     description:
       "London Musicals Desktop Application with Java Swing. Users can book, browse and download tickets for musicals. Admin can add musicals and schedules. Check Gihub for Codebase.",
     imageUrl: londonmusicals,
     projectUrl: "",
     code: "",
-    details: [
-      "Java",
-      "Java Swing",
-      "Netbeans",
-      "MySQL",
-      "JUnit",
-    ],
+    details: ["Java", "Java Swing", "Netbeans", "MySQL", "JUnit"],
   },
   {
-    title:
-      "My Music (Prototype Design)",
+    title: "My Music (Prototype Design)",
     projectType: "frontend",
     description:
       "My Music Streamimg and Sharing Application Prototype Design with Axure RP . Live Prototype Design: https://b7s0oa.axshare.com",
     imageUrl: musicprototype,
     projectUrl: "https://l32mq1.axshare.com/",
     code: "https://l32mq1.axshare.com/?g=14",
-    details: [
-      "Java",
-      "Java Swing",
-      "Netbeans",
-      "MySQL",
-      "JUnit",
-    ],
+    details: ["Java", "Java Swing", "Netbeans", "MySQL", "JUnit"],
   },
   {
-    title:
-      "Mercantile Islami Life Insurance Limited (MILIL) (Ongoing)",
+    title: "Mercantile Islami Life Insurance Limited (MILIL) (Ongoing)",
     projectType: "frontend",
     description:
       "A complete Insurance Management System. Company Profile : https://www.milil.com.bd/ ",
@@ -141,8 +170,7 @@ const Project = [
   },
 
   {
-    title:
-      "Chittagong Builders & Machinery ltd (CBM) (Ongoing)",
+    title: "Chittagong Builders & Machinery ltd (CBM) (Ongoing)",
     projectType: "frontend",
     description:
       "Contributing in Management Information System (MIS) development. Company Profile : https://cbmbd.com/",
@@ -170,8 +198,7 @@ const Project = [
     description:
       "It's a highly scalable E-Commerce shopping platform. Here Sellers can Post their products and customers can buy. ",
     imageUrl: myBrand,
-    projectUrl:
-      "https://sleepy-montalcini-d90279.netlify.app/",
+    projectUrl: "https://sleepy-montalcini-d90279.netlify.app/",
     code: "https://github.com/Priom7/My-Brand-",
     details: [
       "React JS",
@@ -212,8 +239,7 @@ const Project = [
     description:
       "It's a basic Admin task Panel where Admin can Enable/Disable, Add/Delete Items. Authorization and Authentication Added. (Done as Task) ",
     imageUrl: adminPannel,
-    projectUrl:
-      "https://awesome-poincare-9606e1.netlify.app/",
+    projectUrl: "https://awesome-poincare-9606e1.netlify.app/",
     code: "https://github.com/Priom7/E-Commerce-Test-",
     details: [
       "React JS",
@@ -235,8 +261,7 @@ const Project = [
     description:
       "A Complete Full stack Application with MERN Stack. Validation in both frontend (React), and Backend (nodeJS). (Done as Task)",
     imageUrl: jsdevtask,
-    projectUrl:
-      "https://zealous-johnson-d21e2d.netlify.app/",
+    projectUrl: "https://zealous-johnson-d21e2d.netlify.app/",
     code: "https://github.com/Priom7/MERN-Full-Stack-",
     details: [
       "React JS",
@@ -258,8 +283,7 @@ const Project = [
       "Movie application data fetched form TMDB and users can watch movie trailers fetched from YOUTUBE by clicking on first row banners. (Design inspired by Netflix)",
     imageUrl: myFlix,
     projectUrl: "https://netflix-clone-app-396c5.web.app/",
-    code:
-      "https://github.com/Priom7/Netflix-Clone-With-React-JS",
+    code: "https://github.com/Priom7/Netflix-Clone-With-React-JS",
     details: [
       "React JS",
       "UI",
@@ -278,8 +302,7 @@ const Project = [
       "Social media application like Instagram where users can share images and comment on them ",
     imageUrl: mygram,
     projectUrl: "https://keen-neumann-fca679.netlify.app/",
-    code:
-      "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
+    code: "https://github.com/Priom7/Click-Share-My-Gram-Social-Media-",
     details: [
       "React JS",
       "material-ui",
@@ -295,10 +318,8 @@ const Project = [
     description:
       "E-Commerce Web Application. Users can look for products and add/remove items to shopping basket and subtotal will be generated automatically. (Design inspired by Amazon)",
     imageUrl: amazon,
-    projectUrl:
-      "https://xenodochial-spence-dd4817.netlify.app/",
-    code:
-      "https://github.com/Priom7/Ecommerce-Web-Application",
+    projectUrl: "https://xenodochial-spence-dd4817.netlify.app/",
+    code: "https://github.com/Priom7/Ecommerce-Web-Application",
     details: [
       "React JS",
       "redux-store",
@@ -334,8 +355,7 @@ const Project = [
     description:
       "Covid-19 info tracker PWA on daily basis. Users can search data of individual Country and Map will automatically change its coordinates towards that country.",
     imageUrl: covid,
-    projectUrl:
-      "https://priceless-wescoff-783a66.netlify.app/",
+    projectUrl: "https://priceless-wescoff-783a66.netlify.app/",
     code: "https://github.com/Priom7/COVID_19_info",
     details: [
       "React JS",
@@ -351,18 +371,11 @@ const Project = [
   {
     title: "City Weather Info",
     projectType: "frontend",
-    description:
-      "Weather info PWA where users can get weather data of cities",
+    description: "Weather info PWA where users can get weather data of cities",
     imageUrl: weather,
     projectUrl: "https://gifted-joliot-e609d7.netlify.app/",
-    code:
-      "https://github.com/Priom7/Weather-Forecasting-PWA",
-    details: [
-      "React JS",
-      "Openweathermap-api",
-      "flex-box",
-      "axios",
-    ],
+    code: "https://github.com/Priom7/Weather-Forecasting-PWA",
+    details: ["React JS", "Openweathermap-api", "flex-box", "axios"],
   },
 
   {
@@ -421,16 +434,14 @@ const Project = [
     ],
   },
   {
-    title:
-      "Speaking and Listening Assistant (SLA) (CSE 299)",
+    title: "Speaking and Listening Assistant (SLA) (CSE 299)",
     projectType: "academic",
     description:
       "Speaking and Listening Assistant (SLA) is a device for helping the deaf and mute people in their daily life. This system contains Smart Gloves Device with sensors attached and an Android Application",
     imageUrl: sla,
     projectUrl:
       "https://drive.google.com/file/d/1o8KqV0dgS9UB0drIF60f0nv88uwM8M0T/preview",
-    code:
-      "https://github.com/Priom7/CSE-299-Speaking-and-Listening-Assistant-Smart-Gloves-and-App-",
+    code: "https://github.com/Priom7/CSE-299-Speaking-and-Listening-Assistant-Smart-Gloves-and-App-",
     details: [
       "Arduino UNO",
       "Android Studio",
@@ -441,32 +452,24 @@ const Project = [
     ],
   },
   {
-    title:
-      "Image and Speech to Text and Real Time Translator (CSE 327)",
+    title: "Image and Speech to Text and Real Time Translator (CSE 327)",
     projectType: "academic",
     description:
       "An android application which can detect texts from image and speech, then translate it into different languages.",
     imageUrl: translator,
     projectUrl: "https://www.youtube.com/embed/OXSLNfYBeBc",
-    code:
-      "https://github.com/Priom7/CSE-327-Recognizing-Text-and-Translate-from-Image-",
+    code: "https://github.com/Priom7/CSE-327-Recognizing-Text-and-Translate-from-Image-",
     details: ["Android Studio", "OpenCV", "Yandex API"],
   },
   {
     title: "Android Controlled Robot (CSE 323)",
     projectType: "academic",
-    description:
-      "A rover that can be controlled through android application.",
+    description: "A rover that can be controlled through android application.",
     imageUrl: rover,
     projectUrl:
       "https://drive.google.com/file/d/10AwknUIMUjf4ntbge1KeFa7sbhx4uM0h/preview",
-    code:
-      "https://drive.google.com/file/d/10AwknUIMUjf4ntbge1KeFa7sbhx4uM0h/preview",
-    details: [
-      "MIT App Inventor",
-      "Arduino Microprocessor",
-      "Bluetooth",
-    ],
+    code: "https://drive.google.com/file/d/10AwknUIMUjf4ntbge1KeFa7sbhx4uM0h/preview",
+    details: ["MIT App Inventor", "Arduino Microprocessor", "Bluetooth"],
   },
   {
     title: "Sequential Logic Design (DLD) (CSE 231)",
@@ -487,13 +490,7 @@ const Project = [
     projectUrl:
       "https://emgithub.com/Priom7/CSE-311-Tutor-Finder-/blob/master/Tutor_Finder-Database/Tutor_Finder%20(Database)/project_experiment%20(2).sql",
     code: "https://github.com/Priom7/CSE-311-Tutor-Finder-",
-    details: [
-      "Raw PHP",
-      "MySQL",
-      "Relational Database",
-      "HTML",
-      "CSS",
-    ],
+    details: ["Raw PHP", "MySQL", "Relational Database", "HTML", "CSS"],
   },
   {
     title: "Restaurant Management System Java (CSE 215)",
@@ -522,7 +519,7 @@ function TabPanel(props) {
 
   return (
     <div
-      role='tabpanel'
+      role="tabpanel"
       hidden={value !== index}
       id={`full-width-tabpanel-${index}`}
       aria-labelledby={`full-width-tab-${index}`}
@@ -571,24 +568,17 @@ export default function ProjectTab() {
 
   return (
     <div className={classes.root}>
-      <AppBar
-        className='appbar'
-        position='static'
-        color='default'
-      >
+      <AppBar className="appbar" position="static" color="default">
         <Tabs
-          className='tabs'
+          className="tabs"
           value={value}
           onChange={handleChange}
-          variant='fullWidth'
-          aria-label='full width tabs example'
+          variant="fullWidth"
+          aria-label="full width tabs example"
         >
-          <Tab label='Recent Projects' {...a11yProps(0)} />
-          <Tab
-            label='Academic Projects'
-            {...a11yProps(1)}
-          />
-          <Tab label='Backend Projects' {...a11yProps(2)} />
+          <Tab label="Recent Projects" {...a11yProps(0)} />
+          <Tab label="Academic Projects" {...a11yProps(1)} />
+          <Tab label="Backend Projects" {...a11yProps(2)} />
           {/* <Tab label='Fun Projects' {...a11yProps(3)} /> */}
         </Tabs>
       </AppBar>
@@ -597,45 +587,30 @@ export default function ProjectTab() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel
-          value={value}
-          index={0}
-          dir={theme.direction}
-        >
+        <TabPanel value={value} index={0} dir={theme.direction}>
           <ProjectList items={Project}></ProjectList>
         </TabPanel>
 
-        <TabPanel
-          value={value}
-          index={1}
-          dir={theme.direction}
-        >
-          <AcademicProjectList
-            items={Project}
-          ></AcademicProjectList>
+        <TabPanel value={value} index={1} dir={theme.direction}>
+          <AcademicProjectList items={Project}></AcademicProjectList>
         </TabPanel>
-        <TabPanel
-          value={value}
-          index={2}
-          dir={theme.direction}
-        >
+        <TabPanel value={value} index={2} dir={theme.direction}>
           <h1 style={{ color: "wheat" }}>
-            Working On an Unique Way to Represent
-            Backend/Server side Programming Skills.
+            Working On an Unique Way to Represent Backend/Server side
+            Programming Skills.
           </h1>
           <h4 style={{ color: "#ee4540" }}>
-            Fell free to check my recent works on GitHub
-            Profile{" "}
-            <a href='https://github.com/Priom7'>
+            Fell free to check my recent works on GitHub Profile{" "}
+            <a href="https://github.com/Priom7">
               <GitHubIcon></GitHubIcon>
             </a>
           </h4>
           <img
-            width='50%'
-            height='50%'
-            position='relative'
+            width="50%"
+            height="50%"
+            position="relative"
             src={construction}
-            alt='under_construction'
+            alt="under_construction"
           ></img>
         </TabPanel>
         {/* <TabPanel

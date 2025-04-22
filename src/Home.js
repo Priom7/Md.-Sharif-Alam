@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import ArticleIcon from '@material-ui/icons/Link';
 import space from "./images/gif/space.gif";
 
 import "./Home.css";
@@ -40,6 +41,12 @@ const Home = (props) => {
                 {" "}
                 <a href="https://github.com/Priom7">
                   <GitHubIcon></GitHubIcon> 
+                </a>
+              </span>
+              <span>
+                {" "}
+                <a href="https://medium.com/@priom7197">
+                  <ArticleIcon></ArticleIcon>
                 </a>
               </span>
             </p>
